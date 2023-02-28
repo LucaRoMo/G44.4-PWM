@@ -1,0 +1,12 @@
+.container{
+    background-color: lightgray;
+    border: 0.1em solid black;
+    border-radius: 0.8em;
+    display: flex;
+}
+.text{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 8em;
+}
