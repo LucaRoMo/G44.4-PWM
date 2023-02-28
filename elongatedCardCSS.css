@@ -1,0 +1,16 @@
+#container{
+    border: solid black;
+    background-color: grey;
+}
+p {
+    color: black;
+    display: inline-block;
+}
+img{
+    width: 12em;
+    height: 8em;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1em;
+    border: 0.1em solid black;
+}
