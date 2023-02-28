@@ -1,10 +1,13 @@
 #container{
     border: solid black;
     background-color: grey;
+    margin: 0.5em;
+    padding: 0.2em;
 }
 p {
     color: black;
     display: inline-block;
+    font-size: 1.5em;
 }
 img{
     width: 12em;
