@@ -1,42 +1,29 @@
-<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="../CSS/login.css">
-</head>
-<body>
-
-  <div class="container-login">
+<link rel="stylesheet" href="/CSS/login.css">
+<div class="container-login">
     <h1>Iniciar sesión</h1>
     <div class="login-container">
-      <form method="post" class="post">
-        <div id="log-in">
-
-            <div class="txt-field">
-              <label for="user"><b>Usuario</b></label>
-              <input type="text" name="user" id="user" required>
-             </div>
-            <div class="pass-field">
-              <label for="user"><b>Contraseña</b></label>
-              <input type="password" name="pass" id="pass" required>
+        <form method="post" class="post">
+            <div id="log-in">
+                <div class="txt-field">
+                    <label for="user"><b>Usuario</b></label>
+                    <input type="text" name="user" id="user" required>
+                </div>
+                <div class="pass-field">
+                    <label for="user"><b>Contraseña</b></label>
+                    <input type="password" name="pass" id="pass" required>
+                </div>
+                <div class="prueba">
+                    <input id="remember" type="checkbox" value="Recordar contraseña">
+                    <span>Recordar Contraseña</span>
+                </div>
+                <div class="boton">
+                    <input id="login-btn" type="submit" value="Iniciar sesión">
+                </div>
+                <span class="remember"><p>Si no tienes una cuenta solicitalo <a href="#">aquí</a>.</p></span>
             </div>
-
-            <div class="prueba">
-              <input id="remember" type="checkbox" value="Recordar contraseña">
-              <span>Recordar Contraseña</span>
-            </div>
-            <div class="boton">
-              <input id="login-btn" type="submit" value="Iniciar sesión">
-            </div>
-
-
-          <span class="remember"><p>Si no tienes una cuenta solicitalo <a href="#">aquí</a>.</p></span>
+        </form>
+        <div class="academy-logo">
+            <img src="/../PWM2023-main/Resources/wireframe-image.png" alt="Logo de la academia">
         </div>
-      </form>
-      <div class="academy-logo">
-        <img src="/../PWM2023-main/Resources/wireframe-image.png" alt="Logo de la academia">
-      </div>
     </div>
-  </div>
-</body>
-</html>
+</div>
