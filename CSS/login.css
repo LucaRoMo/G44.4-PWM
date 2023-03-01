@@ -1,0 +1,120 @@
+img {
+  height: auto;
+  width: auto;
+}
+
+body {
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   */
+
+}
+
+#log-in, .txt-field, .pass-field, .prueba, .boton{
+  /*//padding:0.5em 1em 1em 1em;*/
+}
+
+.txt-field #user {
+  justify-self: flex-end ;
+}
+.pass-field #pass{
+  display: inline-block;
+}
+
+.boton{
+  text-align: center;
+}
+
+.container{
+  background-color: grey;
+  height: 20em;
+  width:35em;
+}
+
+
+#login-btn{
+  margin:auto;
+  width: 50%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.login-container{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.post{
+  display: inline-block;
+  width: 20em;
+}
+
+.academy-logo{
+  //display: inline-block;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+
+/*
+background-image{
+  background-image: url("/images/wireframe-image.png");
+  backdrop-filter: blur(10px);
+}
+
+.container{
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 625px;
+//max-height: 500px;
+//max-width: 650px;
+}
+
+.container .txt-field input{
+  text-align: right;
+}
+
+.container .login-container{
+  display: flex;
+}
+
+.container .login-container #log-in{
+  display: block;
+}
+
+.container .login-container #log-in label{
+  text-align: right;
+  display: inline-block;
+  //width: 80px;
+}
+
+.container .login-container #log-in #login-btn{
+  text-align: center;
+  //display: inline-block;
+}
+.academy-logo{
+  text-align: center;
+}
+
+.recuperar {
+
+}
+
+input[type=submit] {
+  background-color: #555555;
+  border: 1px solid black;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  height: auto;
+  width: 150px;
+}
+*/
