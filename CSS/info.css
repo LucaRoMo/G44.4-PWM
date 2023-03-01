@@ -1,0 +1,30 @@
+div{
+    border: 1px solid red;
+    padding: 20px;
+}
+*{
+    scroll-behavior: auto;
+}
+
+.container {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .card1{
+    display: flex;
+    position: relative;
+}
+
+.container .card1 p{
+    height: 200px;
+    width: 400px;
+}
+
+
+.container .card1 .imagenes{
+    text-align: center;
+}
+
