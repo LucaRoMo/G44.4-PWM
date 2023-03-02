@@ -1,29 +1,16 @@
-<link rel="stylesheet" href="/CSS/login.css">
-<div class="container-login">
-    <h1>Iniciar sesión</h1>
-    <div class="login-container">
-        <form method="post" class="post">
-            <div id="log-in">
-                <div class="txt-field">
-                    <label for="user"><b>Usuario</b></label>
-                    <input type="text" name="user" id="user" required>
-                </div>
-                <div class="pass-field">
-                    <label for="user"><b>Contraseña</b></label>
-                    <input type="password" name="pass" id="pass" required>
-                </div>
-                <div class="prueba">
-                    <input id="remember" type="checkbox" value="Recordar contraseña">
-                    <span>Recordar Contraseña</span>
-                </div>
-                <div class="boton">
-                    <input id="login-btn" type="submit" value="Iniciar sesión">
-                </div>
-                <span class="remember"><p>Si no tienes una cuenta solicitalo <a href="#">aquí</a>.</p></span>
-            </div>
-        </form>
-        <div class="academy-logo">
-            <img src="/../PWM2023-main/Resources/wireframe-image.png" alt="Logo de la academia">
-        </div>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+</head>
+<body>
+    <div class="userName" w3-include-html="userName.html"></div>
+    <div class="passUser" w3-include-html="passUser.html"></div>
+    <div class="passRemember" w3-include-html="passRemember.html"></div>
+
+    <script>w3IncludeHTML();</script>
+
+</body>
+</html>
