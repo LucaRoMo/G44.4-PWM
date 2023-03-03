@@ -1,0 +1,10 @@
+label{
+    display: block;
+}
+textarea{
+    display: block;
+}
+.textArea{
+    margin: auto;
+    text-align: center;
+}

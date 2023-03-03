@@ -1,0 +1,15 @@
+img {
+    margin: 1em;
+    border-radius: 4em;
+    border: solid 0.1em;
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 2em;
+}
+p {
+    display: inline-block;
+    vertical-align: middle;
+}
+.containerHeader{
+    display: inline-block;
+}

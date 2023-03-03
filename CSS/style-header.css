@@ -9,12 +9,12 @@ body, .login-header {
   background-position: center center;
 }
 
-.container img {
+.containerHeader #iconHeader {
   height: 40px;
   width: 40px;
 }
 
-.container {
+.containerHeader {
   margin: 0;
   padding: 0;
   width: 100vw;

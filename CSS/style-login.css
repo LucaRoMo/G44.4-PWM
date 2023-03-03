@@ -1,10 +1,10 @@
-.container{
+.containerHeader{
     background-color: grey;
     width:55em;
     height: 20em;
 }
 
-.container h1{
+.containerHeader h1{
     padding: 0.5em;
     text-align: center;
 }
