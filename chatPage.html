@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Lorem ipsum</title>
+  <link rel="stylesheet" type="text/css" href="chatPage.css">
+  <script src="http://www.w3schools.com/lib/w3data.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Aquí irá nuestro Header</h1>
+  </header>
+  <div class="center-of-chat">
+    <div id="otherUserZone">
+      <div id="otherUser" w3-include-html="chatUser.html"></div>
+    </div>
+    <nav id="chat_history" w3-include-html="chat.html"></nav>
+    <div id="thisUserZone">
+      <div id="thisUser" w3-include-html="chatUser.html"></div>
+    </div>
+  </div>
+  <footer>
+    <p>Aquí irá nuestro footer</p>
+  </footer>
+  <script>
+    w3IncludeHTML();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.chatUser{
+    display: flex;
+    flex-direction: column;
+    width: 8em;
+    height: 10em;
+    background-color: gray;
+    text-align: center;
+
+}
+.chatUser img{
+    width: 7em;
+    height: 7em;
+    border-radius: 1em;
+    align-self: center;
+    padding: 0.5em;
+}
+
