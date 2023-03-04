@@ -1,15 +1,15 @@
-.containerHeader{
+.login-container{
     background-color: grey;
     width:55em;
     height: 20em;
 }
 
-.containerHeader h1{
+.login-container h1{
     padding: 0.5em;
     text-align: center;
 }
 
-.login-container {
+.login-form-container {
     display: flex;
     justify-content: space-around;
 }
@@ -29,70 +29,3 @@
 .boton input{
     width: 15em;
 }
-
-
-/*
-div{
-  border: 1px solid aqua;
-}
-
-.txt-field{
-  display: inline-block;
-
-}
-
-.boton{
-  text-align: center;
-}
-
-.container-login{
-  background-color: grey;
-  width:45em;
-  height: 20em;
-}
-.container-login,
-.log-in,
-.passRemember,
-.passUser,
-.userName,
-boton{
-  padding: 1em 1em 1em 1em;
-
-}
-
-#login-btn{
-  margin:auto;
-  width: 50%;
-}
-
-
-input[type=submit] {
-  background-color: #555555;
-  border: 1px solid black;
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-  height: auto;
-  width: 150px;
-}
-
- h1 {
-  text-align: center;
-}
-
-.login-container{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
-
-.post{
-  display: inline-block;
-}
-
-.academy-logo{
-  text-align: center;
-  padding: 10px 10px 10px 10px;
-}
-
-*/

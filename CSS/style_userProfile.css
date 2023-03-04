@@ -1,0 +1,23 @@
+.containerOfMiPerfil{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "groupElement ."
+    "card1 button1"
+    "card2 button2";
+}
+#groupButton{
+    grid-area: groupElement;
+    align-self: stretch;
+}
+#elongatedCard1{
+    grid-area: card1;
+}
+#elongatedCard2{
+    grid-area: card2;
+}
+#button1{
+    grid-area: button2;
+}
+

@@ -1,4 +1,4 @@
-.containerHeader{
+.containerOfGroup{
     background-color: lightgray;
     border-radius: 0.8em;
     border: 0.1em solid black;
@@ -6,7 +6,7 @@
     display: flex;
     justify-content: flex-end;
 }
-.text{
+.textOfGroup{
     margin: auto;
     font-size: 1.2em;
     text-align: center;

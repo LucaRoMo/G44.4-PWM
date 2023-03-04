@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.center-of-chat{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+nav {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+#thisUser{
+    align-self: flex-end;
+}
+#otherUser{
+    align-self: flex-end;
+}
+#thisUserZone{
+    height: 26em;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#otherUserZone{
+    height: 100%;
+    float: left;
+}
+#chat_history{
+    max-height: 36.5em;
+    align-self: center;
+}
