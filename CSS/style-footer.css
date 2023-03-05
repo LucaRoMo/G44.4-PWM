@@ -6,20 +6,23 @@
     cursor: pointer;
 }
 
-footer{
-    background: grey;
-    padding: 1em 0;
-    text-align: center;
-    position: absolute;
+#footer-general{
+    font-size: small;
+    position: relative;
+    left: 0;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
+    height: 12vh;
+    background: grey;
+    color: white;
+    text-align: center;
 }
 
-footer .titulo-seccion{
+#footer-general .titulo-seccion{
     color:black;
 }
 
-footer .redes-sociales{
+#footer-general .redes-sociales{
     display: flex;
     justify-content: center;
 
