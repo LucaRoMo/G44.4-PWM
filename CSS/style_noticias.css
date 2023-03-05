@@ -19,10 +19,10 @@
     width: 100%;
     height: auto;
 }
-img{
+.noticias img{
     width: 100%;
 }
-.tarjeta{
+.tarjeta_noticias{
     padding-right: 1%;
     padding-left: 1%;
 }

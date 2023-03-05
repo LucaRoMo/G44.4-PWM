@@ -21,6 +21,8 @@
 }
 .messages-list{
     overflow: scroll;
+    display: flex;
+    flex-direction: column;
 }
 
 .chat-input-container{
