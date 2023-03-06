@@ -1,0 +1,31 @@
+.login-container{
+    background-color: grey;
+    width:55em;
+    height: 20em;
+}
+
+.login-container h1{
+    padding: 0.5em;
+    text-align: center;
+}
+
+.login-form-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.userName,
+.passUser,
+.passRemember,
+.boton,
+.remember {
+    padding: 0.25em;
+}
+
+.boton {
+    text-align: center;
+}
+
+.boton input{
+    width: 15em;
+}
