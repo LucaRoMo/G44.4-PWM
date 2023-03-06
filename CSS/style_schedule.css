@@ -1,4 +1,4 @@
-table {
+.schedule {
     text-align: center;
     margin: 50px auto;
     border-collapse: collapse;
@@ -6,13 +6,13 @@ table {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
-th, td {
+.schedule_th, .schedule_td {
     padding: 20px;
     text-align: center;
     font-size: 18px;
 }
 
-th {
+schedule_th {
     background-color: gray;
     color: white;
     border: 1px solid black;
@@ -22,11 +22,11 @@ tr:nth-child(even) {
     background-color: lightgray;
 }
 
-td {
+schedule_td {
     border: 1px solid black;
 }
 
-td:first-child {
+schedule_td:first-child {
     background-color: gray;
     color: white;
 }

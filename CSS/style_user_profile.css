@@ -1,4 +1,4 @@
-.containerOfMiPerfil{
+.container_of_MiPerfil{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -7,7 +7,7 @@
     "card1 button1"
     "card2 button2";
 }
-#groupButton{
+#button_group{
     grid-area: groupElement;
     align-self: stretch;
 }

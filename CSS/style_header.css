@@ -1,4 +1,4 @@
- body, .login-header {
+.login-header {
   margin: 0;
   padding: 0;
   position: relative;
@@ -28,20 +28,20 @@
   box-shadow: 3px 5px 5px rgb(0, 0, 0);
 }
 
-h3 {
+.header_h3{
   padding: 1em;
   color: white;
   letter-spacing: 3px;
 }
 
-ul, li {
+.header_list, .header_list_element {
   list-style: none;
   display: flex;
   padding: 1em;
   margin: 0;
 }
 
-li {
+.header_list_element {
   cursor: pointer;
   //transition: all .5s ease-in-out;
   margin: 0.5em;
@@ -50,7 +50,7 @@ li {
   border-radius: 20px;
 }
 
-a {
+.header_link {
   text-decoration: none;
   cursor: pointer;
 }

@@ -1,4 +1,4 @@
-img {
+#icon_text_image {
     margin: 1em;
     border-radius: 4em;
     border: solid 0.1em;
@@ -6,7 +6,7 @@ img {
     vertical-align: middle;
     max-height: 2em;
 }
-p {
+#icon_text_p {
     display: inline-block;
     vertical-align: middle;
 }

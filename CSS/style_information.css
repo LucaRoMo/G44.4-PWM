@@ -1,0 +1,34 @@
+.container_info {
+    //min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: auto;
+    //border: 1px solid red;
+    padding: 20px;
+}
+.container_info .card1{
+    display: flex;
+//border: 1px solid red;
+    padding: 20px;
+}
+
+.container_info .card1 p{
+    height: 15em;
+    width: 40em;
+//border: 1px solid red;
+    padding: 20px;
+}
+
+
+.container_info .card1 .imagenes{
+    text-align: center;
+//border: 1px solid red;
+    padding: 20px;
+}
+.information_text{
+//border: 1px solid red;
+    padding: 20px;
+}
+
