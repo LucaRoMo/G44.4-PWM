@@ -1,0 +1,7 @@
+/*Para el userName*/
+.txt-field{
+    display: inline-block;
+//width: auto;
+    float: right;
+
+}
