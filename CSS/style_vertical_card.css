@@ -1,4 +1,4 @@
-.tarjeta{
+.vertical_card{
     margin: 0.1em;
     width: 8em;
     height: 9em;
@@ -9,11 +9,11 @@
     flex-direction: column;
     justify-content: flex-start;
 }
-.tarjeta_img{
+.vertical_card_img{
     max-height: 60px;
     width: 100%;
 }
-.info_de_la_academia{
+.academy_info{
     padding-top: 1px;
     text-align: center;
 }

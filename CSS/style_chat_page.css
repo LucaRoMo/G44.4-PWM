@@ -4,25 +4,31 @@
     color: #333;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
-.center-of-chat{
+.center_of_chat{
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     align-self: center;
     display: flex;
     flex-direction: row;
     max-width: 100%;
 }
 
-#thisUserZone{
+#this_user_zone{
     height: 26em;
     float: right;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-#otherUserZone{
+#other_user_zone{
     height: 100%;
     float: left;
 }
