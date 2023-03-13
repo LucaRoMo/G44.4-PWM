@@ -5,17 +5,17 @@
     padding: 0.3em;
 }
 
-.message-foot{
+.message_foot{
     align-items: end;
 }
 
-.message-content {
+.message_content {
     padding: 0.5em;
     width: 100%;
 }
 
-.message-timestamp {
+.message_timestamp {
     color: #999;
-    font-size: 0.4em;
-    align-self: flex-end;
+    font-size: 0.1em;
+    align-self: end;
 }

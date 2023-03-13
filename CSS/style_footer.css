@@ -1,37 +1,38 @@
 #logoFacebook, #logoInstagram, #logoLinkedIn, #logoTwitter {
-    height: 30px;
-    width: 30px;
+    height: 3em;
+    width: 3em;
     padding-left: 20px;
     padding-right: 20px;
     cursor: pointer;
 }
 
-#footer-general{
+#footer_general{
     font-size: small;
     position: relative;
     left: 0;
     bottom: 0;
-    width: 100vw;
-    height: 12vh;
+    width: 100%;
+    height: 9em;
     background: grey;
     color: white;
     text-align: center;
 }
 
-#footer-general .titulo-seccion{
+#footer_general .tittle_section{
     color:black;
 }
 
-#footer-general .redes-sociales{
+#footer_general .social_media{
     display: flex;
     justify-content: center;
 
 }
 
-.redes-sociales {
+.social_media {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 10px 10px 10px;
     cursor: pointer;
+
 }
