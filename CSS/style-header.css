@@ -1,10 +1,8 @@
-body, .login-header {
+.login-header {
   margin: 0;
   padding: 0;
   position: relative;
-
   font-family: 'Segoe UI', serif;
-  //padding-bottom: 20px;
   height: 200px;
   background-size: cover;
   background-repeat:no-repeat;
@@ -14,6 +12,14 @@ body, .login-header {
 #iconHeader, #logoIconHeader{
   height: 40px;
   width: 40px;
+}
+
+#iconHeader {
+  margin-right: 1em;
+}
+
+#logoIconHeader {
+  margin-left: 1em;
 }
 
 .containerHeader {
