@@ -1,63 +1,59 @@
-.header_login {
+body {
   margin: 0;
   padding: 0;
-  position: relative;
-
-  font-family: 'Segoe UI', serif;
-  //padding-bottom: 20px;
-  height: 5em;
-  background-size: cover;
-  background-repeat:no-repeat;
-  background-position: center center;
 }
 
-#header_container, #header_logo_icon{
-  height: 40px;
-  width: 40px;
-}
-
-.header_container {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 7vh;
+.website-header {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr) 450px 1fr;
+  grid-template-rows: 100px;
   background-color: grey;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  box-shadow: 3px 5px 5px rgb(0, 0, 0);
+  grid-template-areas: "a b c d";
 }
 
-.header_h3{
-  padding: 1em;
-  color: white;
-  letter-spacing: 3px;
+.header-academy-logo{
+  grid-area: a;
 }
 
-.header_list, .header_list_element {
+.header-academy-name{
+  grid-area: b;
+}
+
+.header-navbar{
+  grid-area: c;
+}
+
+.header-academy-user{
+  grid-area: d;
+}
+
+.header-academy-logo, .header-academy-name, .header-navbar, .header-academy-user {
+  display: grid;
+  align-self: center;
+  justify-content: center;
+}
+
+#logoIconHeader, #iconHeader{
+  height: 25px;
+  width: 25px;
+}
+
+.header-navbar ul, .header-navbar li {
   list-style: none;
   display: flex;
   padding: 1em;
   margin: 0;
 }
 
-.header_list_element {
-  cursor: pointer;
-  //transition: all .5s ease-in-out;
+.header-navbar li {
   margin: 0.5em;
   padding: 10px 15px;
   color: white;
   border-radius: 20px;
 }
 
-.header_link {
+.header-navbar a {
   text-decoration: none;
   cursor: pointer;
 }
-
-/* animacion
-li:hover{
-  background-color: aqua;
-  box-shadow: 3px 5px 5px rgb(0, 0, 0);
-}
-*/
