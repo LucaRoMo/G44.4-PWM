@@ -1,38 +1,35 @@
-#footer_logo_facebook, #footer_logo_instagram, #footer_logo_linkedIn, #footer_logo_twitter {
-    height: 3em;
-    width: 3em;
-    padding-left: 20px;
-    padding-right: 20px;
+#website-footer{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6em 2em;
+    background-color: grey;
+    grid-template-areas:
+        "texto"
+        "imagenes";
+}
+
+.footer-txt{
+    grid-area: texto;
+    margin: 1em;
+}
+
+.footer_social_media{
+    grid-area: imagenes;
+    grid-template-columns: repeat(4, 2em);
+    grid-gap: 1em;
     cursor: pointer;
+    margin-bottom: 2em;
+
 }
 
-#footer_general{
-    font-size: small;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 9em;
-    background: grey;
-    color: white;
-    text-align: center;
+.footer_social_media img {
+    height: 25px;
+    width: 25px;
 }
 
-#footer_general .tittle_section{
-    color:black;
-}
-
-#footer_general .footer_social_media{
-    display: flex;
+.footer-txt, .footer_social_media{
+    display: grid;
+    align-self: center;
     justify-content: center;
-
-}
-
-.footer_social_media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 10px 10px 10px;
-    cursor: pointer;
-
 }
