@@ -1,4 +1,4 @@
-.container_of_group{
+.group_element_container{
     background-color: lightgray;
     border-radius: 0.8em;
     border: 0.1em solid black;
@@ -6,12 +6,12 @@
     display: flex;
     justify-content: flex-end;
 }
-.text_of_group{
+.group_element_text{
     margin: auto;
     font-size: 1.2em;
     text-align: center;
 }
-.arrow{
+.group_element_arrow{
     padding-right: 0.8em;
     font-size: 1.2em;
 }

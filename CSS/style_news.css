@@ -1,4 +1,4 @@
-.noticias {
+.news {
     background-color: #aaa;
     text-align: center;
     width: 66%;
@@ -8,21 +8,21 @@
     flex-direction: column;
 }
 
-.groupOfVerticalCards{
+.news_group_of_vertical_cards{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-#info {
+#news_info {
     background-color: #333333;
     color: white;
     width: 100%;
     height: auto;
 }
-.noticias img{
+.news img{
     width: 100%;
 }
-.tarjeta_noticias{
+.news_card{
     padding-right: 1%;
     padding-left: 1%;
 }

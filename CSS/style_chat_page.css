@@ -1,4 +1,4 @@
-#chat_body {
+#chat_page_body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     color: #333;
@@ -21,7 +21,7 @@
 #chat_page_footer{
     grid-area: footer;
 }
-.center_of_chat{
+.chat_page_center{
     grid-row-start: 2;
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
@@ -32,13 +32,13 @@
     ". chat this_user";
 }
 
-#this_user_zone{
+#chat_page_this_user_zone{
     grid-area: this_user;
 }
-#other_user_zone{
+#chat_page_other_user_zone{
     grid-area: other_user;
 }
-#chat_history{
+#chat_page_chat{
     grid-area: chat;
     align-self: center;
 }

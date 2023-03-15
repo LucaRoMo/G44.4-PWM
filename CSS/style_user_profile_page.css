@@ -1,4 +1,4 @@
-.container_of_MiPerfil{
+.user_profile_container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -7,17 +7,17 @@
     "card1 button1"
     "card2 button2";
 }
-#button_group{
+#user_profile_button_group{
     grid-area: groupElement;
     align-self: stretch;
 }
-#elongatedCard1{
+#user_profile_elongated_card1{
     grid-area: card1;
 }
-#elongatedCard2{
+#user_profile_elongated_card2{
     grid-area: card2;
 }
-#button1{
+#user_profile_button1{
     grid-area: button2;
 }
 

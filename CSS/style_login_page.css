@@ -1,31 +1,27 @@
-.login-container{
+.login_container{
     background-color: grey;
     width:55em;
     height: 20em;
 }
 
-.login-container h1{
+.login_container h1{
     padding: 0.5em;
     text-align: center;
 }
 
-.login-form-container {
+.login_form_container {
     display: flex;
     justify-content: space-around;
 }
 
-.userName,
-.passUser,
-.passRemember,
-.boton,
-.remember {
+.login_user_name, .login_pass_user, .login_pass_remember, .login_button, .login_remember {
     padding: 0.25em;
 }
 
-.boton {
+.login_button {
     text-align: center;
 }
 
-.boton input{
+.login_button input{
     width: 15em;
 }

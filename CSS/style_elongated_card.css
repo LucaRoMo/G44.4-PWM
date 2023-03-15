@@ -1,15 +1,15 @@
-.container_of_card{
+.elongated_card_container{
     border: solid black;
     background-color: grey;
     margin: 0.5em;
     padding: 0.2em;
 }
-.text_of_card {
+.elongated_card_text {
     color: black;
     display: inline-block;
     font-size: 1.5em;
 }
-.card_image{
+.elongated_card_image{
     width: 8em;
     height: 8em;
     display: inline-block;

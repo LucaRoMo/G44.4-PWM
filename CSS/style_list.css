@@ -1,4 +1,4 @@
-.page-container {
+.list_page_container {
     margin: 2rem auto;
     max-width: 700px;
     max-height: 750px;
@@ -16,13 +16,13 @@
 }
 
 
-.table {
+.list_table {
     border-top: solid 1px #ccc;
     border-spacing: 0; //para que no haya espacios entre cada celda
 
 }
 
-.table tbody tr img {
+.list_table tbody tr img {
     height: 20px;
     width: auto;
     border-radius: 50%;
@@ -30,51 +30,51 @@
 }
 
 
-.table thead tr {
+.list_table thead tr {
     background: grey;
     color: white;
 }
 
-.table th, .table td {
+.list_table th, .list_table td {
     border-right: 1px solid #ccc;
     min-width: 150px;
     padding: 0.5rem;
     text-align: center;
 }
 
-.table th:last-child,
-.table td:last-child {
+.list_table th:last-child,
+.list_table td:last-child {
     border-right: 0;
 }
 
-.table td {
+.list_table td {
     border-bottom: 1px solid #ccc;
 }
 
-.table tbody tr {
+.list_table tbody tr {
     background: white;
 }
 
-.table tbody tr:nth-child(2n){
+.list_table tbody tr:nth-child(2n){
     background: #b4b3b3;
 }
 
-.table .sticky {
+.list_table .sticky {
     position: sticky;
     left: 0;
 }
 
-.table-container {
+.list_table_container {
     max-width: 100%;
     overflow-x: scroll;
     border-left: solid 1px #ccc;
     border-right: solid 1px #ccc;
 }
 
-.table tbody tr .sticky {
+.list_table tbody tr .sticky {
     background: white;
 }
 
-.table tbody tr:nth-child(2n) .sticky{
+.list_table tbody tr:nth-child(2n) .sticky{
     background: #b4b3b3;
 }

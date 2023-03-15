@@ -1,10 +1,10 @@
-label{
+.text_area label{
     display: block;
 }
-textarea{
+.text_area textarea{
     display: block;
 }
-.textArea{
+.text_area{
     margin: auto;
     text-align: center;
 }

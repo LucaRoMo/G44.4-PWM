@@ -1,6 +1,4 @@
-.container_contact{
-}
-.group_of_icon_text{
+.contact_page_group_of_icon_text{
     margin-left: 10em;
     margin-right: 10em;
     display: grid;
@@ -10,7 +8,7 @@
     "icon1 icon1 . icon2 icon2"
     ". icon3 icon3 icon3  .";
 }
-.group_of_name_field{
+.contact_page_group_of_name_field{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4,1fr);
@@ -20,32 +18,32 @@
     ". name3 ."
     ". name4 .";
 }
-#text_area{
+#contact_page_text_area{
     margin: auto;
 }
-.info_text{
+.contact_page_info_text{
     margin-left: 10em;
     margin-right: 10em;
 }
-#icon_text_1{
+#contact_page_icon_text_1{
     grid-area: icon1;
 }
-#icon_text_2{
+#contact_page_icon_text_2{
     grid-area: icon2;
 }
-#icon_text_3{
+#contact_page_icon_text_3{
     grid-area: icon3;
 }
 
-#name_field_1{
+#contact_page_name_field_1{
     grid-area: name1;
 }
-#name_field_2{
+#contact_page_name_field_2{
     grid-area: name2;
 }
-#name_field_3{
+#contact_page_name_field_3{
     grid-area: name3;
 }
-#name_field_4{
+#contact_page_name_field_4{
     grid-area: name4;
 }

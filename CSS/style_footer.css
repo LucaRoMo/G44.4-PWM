@@ -1,4 +1,4 @@
-#logo_facebook, #logo_instagram, #logo_linkedIn, #logo_twitter {
+#footer_logo_facebook, #footer_logo_instagram, #footer_logo_linkedIn, #footer_logo_twitter {
     height: 3em;
     width: 3em;
     padding-left: 20px;
@@ -22,13 +22,13 @@
     color:black;
 }
 
-#footer_general .social_media{
+#footer_general .footer_social_media{
     display: flex;
     justify-content: center;
 
 }
 
-.social_media {
+.footer_social_media {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,4 +1,4 @@
-.container_info {
+.information_container {
     //min-height: 400px;
     display: flex;
     flex-direction: column;
@@ -8,13 +8,13 @@
     //border: 1px solid red;
     padding: 20px;
 }
-.container_info .card1{
+.information_container .card1{
     display: flex;
 //border: 1px solid red;
     padding: 20px;
 }
 
-.container_info .card1 p{
+.information_container .card1 p{
     height: 15em;
     width: 40em;
 //border: 1px solid red;
@@ -22,7 +22,7 @@
 }
 
 
-.container_info .card1 .imagenes{
+.information_container .card1 .imagenes{
     text-align: center;
 //border: 1px solid red;
     padding: 20px;
