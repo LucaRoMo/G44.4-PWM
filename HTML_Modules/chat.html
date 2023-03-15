@@ -1,19 +1,19 @@
 <link rel="stylesheet" type="text/css" href="../CSS/style_chat.css">
 <script src="http://www.w3schools.com/lib/w3data.js"></script>
 <div class="chat_container">
-    <ul class="messages_list">
-        <li class="message-container"></li>
-            <div class="thisuser_message" w3-include-html="../HTML_Modules/message.html"></div>
-        <li class="message-container"></li>
-            <div class="otheruser_message" w3-include-html="../HTML_Modules/message.html"></div>
-        <li class="message-container"></li>
-            <div class="otheruser_message" w3-include-html="../HTML_Modules/message.html"></div>
-        <li class="message-container"></li>
-            <div class="thisuser_message" w3-include-html="../HTML_Modules/message.html"></div>
+    <ul class="chat_messages_list">
+        <li class="chat_message_container"></li>
+            <div class="chat_thisuser_message" w3-include-html="../HTML_Modules/message.html"></div>
+        <li class="chat_message_container"></li>
+            <div class="chat_otheruser_message" w3-include-html="../HTML_Modules/message.html"></div>
+        <li class="chat_message_container"></li>
+            <div class="chat_otheruser_message" w3-include-html="../HTML_Modules/message.html"></div>
+        <li class="chat_message_container"></li>
+            <div class="chat_thisuser_message" w3-include-html="../HTML_Modules/message.html"></div>
     </ul>
     <form class="chat_input_container">
-        <input class="message_space" type="text" placeholder="Type your message here...">
-        <button class="send_button" type="submit">Send</button>
+        <input class="chat_message_space" type="text" placeholder="Type your message here...">
+        <button class="chat_send_button" type="submit">Send</button>
     </form>
     <script>
         w3IncludeHTML();

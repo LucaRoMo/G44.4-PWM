@@ -1,4 +1,4 @@
-.chatUser{
+.chat_user{
     display: flex;
     flex-direction: column;
     width: 8em;
@@ -6,7 +6,7 @@
     text-align: center;
 
 }
-.chatUser img{
+.chat_user img{
     width: 7em;
     height: 7em;
     border-radius: 1em;

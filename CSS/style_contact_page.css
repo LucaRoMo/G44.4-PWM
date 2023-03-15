@@ -1,6 +1,6 @@
-.containerContact{
+.container_contact{
 }
-.groupOfIconText{
+.group_of_icon_text{
     margin-left: 10em;
     margin-right: 10em;
     display: grid;
@@ -10,7 +10,7 @@
     "icon1 icon1 . icon2 icon2"
     ". icon3 icon3 icon3  .";
 }
-.groupOfNameField{
+.group_of_name_field{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4,1fr);
@@ -20,32 +20,32 @@
     ". name3 ."
     ". name4 .";
 }
-#textArea{
+#text_area{
     margin: auto;
 }
-.infoText{
+.info_text{
     margin-left: 10em;
     margin-right: 10em;
 }
-#iconText1{
+#icon_text_1{
     grid-area: icon1;
 }
-#iconText2{
+#icon_text_2{
     grid-area: icon2;
 }
-#iconText3{
+#icon_text_3{
     grid-area: icon3;
 }
 
-#nameField1{
+#name_field_1{
     grid-area: name1;
 }
-#nameField2{
+#name_field_2{
     grid-area: name2;
 }
-#nameField3{
+#name_field_3{
     grid-area: name3;
 }
-#nameField4{
+#name_field_4{
     grid-area: name4;
 }
