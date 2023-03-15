@@ -1,7 +1,7 @@
 .user_profile_container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
     grid-template-areas:
     "groupElement ."
     "card1 button1"
@@ -19,5 +19,6 @@
 }
 #user_profile_button1{
     grid-area: button2;
+    height: 50%;
 }
 
