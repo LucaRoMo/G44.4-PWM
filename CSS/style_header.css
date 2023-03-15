@@ -9,23 +9,23 @@ body {
   grid-template-columns: repeat(2, 1fr) 450px 1fr;
   grid-template-rows: 100px;
   background-color: grey;
-  grid-template-areas: "a b c d";
+  grid-template-areas: "logo name navbar icon";
 }
 
 .header-academy-logo{
-  grid-area: a;
+  grid-area: logo;
 }
 
 .header-academy-name{
-  grid-area: b;
+  grid-area: name;
 }
 
 .header-navbar{
-  grid-area: c;
+  grid-area: navbar;
 }
 
 .header-academy-user{
-  grid-area: d;
+  grid-area: icon;
 }
 
 .header-academy-logo, .header-academy-name, .header-navbar, .header-academy-user {
