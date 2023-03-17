@@ -1,0 +1,46 @@
+.container-user-card {
+    height: 15em;
+    width: 60em;
+    padding-right: 0.5em;
+    border: 1px black solid;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 15em 40em;
+    grid-template-rows: 200px;
+    background-color: grey;
+    grid-template-areas: "image txt";
+
+}
+
+.txt-user-card, .image-user-card {
+    display: grid;
+    align-self: center;
+    justify-content: center;
+}
+
+.image-user-card {
+    grid-area: image;
+}
+
+.txt-user-card {
+    grid-area: txt;
+}
+
+.image-user-card img{
+    height: 150px;
+    width: 150px;
+    max-width: 100%;
+    position: static;
+}
+
+.paragraph-txt-user-card img {
+    height: 2vw;
+    width: 2vw;
+}
+
+.paragraph-txt-user-card{
+    font-size: 5vw;
+}
+
+
+

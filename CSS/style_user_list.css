@@ -1,0 +1,18 @@
+/*Our phone 1em=16px -> 360px=22.5em*/
+@media only screen and (min-width: 361px) {
+    #user-table{
+        display: none;
+    }
+    #card-information-user-table {
+        display: initial;
+    }
+}
+/*Our tablet 1em=16px -> 1024px=64em*/
+@media only screen and (min-width: 1024px) {
+    #card-information-user-table {
+        display: none;
+    }
+    #user-table{
+        display: initial;
+    }
+}
