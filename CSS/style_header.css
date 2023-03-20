@@ -3,57 +3,135 @@ body {
   padding: 0;
 }
 
-.website-header {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(2, 1fr) 450px 1fr;
-  grid-template-rows: 100px;
-  background-color: grey;
-  grid-template-areas: "logo name navbar icon";
-}
 
-.header-academy-logo{
-  grid-area: logo;
-}
+@media only screen and (min-width: 1024px) {
 
-.header-academy-name{
-  grid-area: name;
-}
+  .website_header {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr) 450px 1fr;
+    grid-template-rows: 100px;
+    background-color: grey;
+    grid-template-areas: "logo name navbar icon";
+  }
 
-.header-navbar{
-  grid-area: navbar;
-}
 
-.header-academy-user{
-  grid-area: icon;
-}
+  .header_academy_logo {
+    grid-area: logo;
+  }
 
-.header-academy-logo, .header-academy-name, .header-navbar, .header-academy-user {
-  display: grid;
-  align-self: center;
-  justify-content: center;
-}
+  .header_academy_name {
+    grid-area: name;
+  }
 
-#logoIconHeader, #iconHeader{
-  height: 25px;
-  width: 25px;
-}
+  .header_navbar {
+    grid-area: navbar;
+  }
 
-.header-navbar ul, .header-navbar li {
-  list-style: none;
-  display: flex;
-  padding: 1em;
-  margin: 0;
-}
+  .header_academy_user {
+    grid-area: icon;
+  }
 
-.header-navbar li {
-  margin: 0.5em;
-  padding: 10px 15px;
-  color: white;
-  border-radius: 20px;
-}
+  .header_academy_logo, .header_academy_name, .header_navbar, .header_academy_user {
+    display: grid;
+    align-self: center;
+    justify-content: center;
+  }
 
-.header-navbar a {
-  text-decoration: none;
-  cursor: pointer;
+  #logoIconHeader, #iconHeader {
+    height: 25px;
+    width: 25px;
+  }
+
+  .header_navbar ul, .header_navbar li {
+    list-style: none;
+    display: flex;
+    padding: 1em;
+    margin: 0;
+  }
+
+  .header_navbar li {
+    margin: 0.5em;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 20px;
+  }
+
+  .header_navbar a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .burguer{
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .website_header {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    background-color: grey;
+  }
+
+
+  .header_academy_logo {
+    align-self: flex-start;
+    margin: auto;
+  }
+
+  .header_academy_name {
+    align-self: center;
+    margin: auto;
+  }
+
+  .header_navbar {
+    display: none;
+  }
+
+  .header_academy_user {
+    display: none;
+  }
+
+  #logoIconHeader, #iconHeader {
+    height: 25px;
+    width: 25px;
+  }
+
+  .line {
+    width: 100%;
+    margin: auto;
+    height: 0.3em;
+    background-color: black;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .header_navbar ul, .header_navbar li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 0;
+  }
+
+  .header_navbar li {
+    margin: 0.5em;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 20px;
+  }
+
+  .header_navbar a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .burger {
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3em;
+    height: 2em;
+  }
 }
