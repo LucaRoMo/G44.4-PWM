@@ -1,12 +1,12 @@
 .container-user-card {
-    height: 15em;
-    width: 60em;
+    height: 7em;
+    width: 100%;
     padding-right: 0.5em;
     border: 1px black solid;
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: 15em 40em;
-    grid-template-rows: 200px;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100px;
     background-color: grey;
     grid-template-areas: "image txt";
 
@@ -16,6 +16,7 @@
     display: grid;
     align-self: center;
     justify-content: center;
+    margin: auto;
 }
 
 .image-user-card {
@@ -27,8 +28,8 @@
 }
 
 .image-user-card img{
-    height: 150px;
-    width: 150px;
+    height: 80px;
+    width: 80px;
     max-width: 100%;
     position: static;
 }
@@ -39,7 +40,8 @@
 }
 
 .paragraph-txt-user-card{
-    font-size: 5vw;
+    font-size: 2em;
+    align-self: center;
 }
 
 
