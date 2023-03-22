@@ -3,7 +3,7 @@
     margin: 50px auto;
     border-collapse: collapse;
     background-color: white;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .schedule_th, .schedule_td {
@@ -12,7 +12,7 @@
     font-size: 18px;
 }
 
-schedule_th {
+.schedule_th {
     background-color: gray;
     color: white;
     border: 1px solid black;
@@ -22,11 +22,11 @@ tr:nth-child(even) {
     background-color: lightgray;
 }
 
-schedule_td {
+.schedule_td {
     border: 1px solid black;
 }
 
-schedule_td:first-child {
+.schedule_td:first-child {
     background-color: gray;
     color: white;
 }
