@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <title>Contacto</title>
     <script src="https://www.w3schools.com/lib/w3data.js"></script>
-    <link rel="stylesheet" href="/CSS/style_contact_page.css">
+    <link rel="stylesheet" href="../CSS/style_contact_page.css">
 </head>
 
 
 <body>
-    <header w3-include-html="/HTML_Modules/header.html">
+    <header w3-include-html="../HTML_Modules/header.html">
     </header>
 <div class="icon_text_container_contact">
     <h2>Lorem ipsum dolor sit amet</h2>
     <div class="contact_page_group_of_icon_text">
-        <div id="contact_page_icon_text_1" w3-include-html="/HTML_Modules/icon_text.html"></div>
-        <div id="contact_page_icon_text_2" w3-include-html="/HTML_Modules/icon_text.html"></div>
-        <div id="contact_page_icon_text_3" w3-include-html="/HTML_Modules/icon_text.html"></div>
+        <div id="contact_page_icon_text_1" w3-include-html="../HTML_Modules/icon_text.html"></div>
+        <div id="contact_page_icon_text_2" w3-include-html="../HTML_Modules/icon_text.html"></div>
+        <div id="contact_page_icon_text_3" w3-include-html="../HTML_Modules/icon_text.html"></div>
     </div>
     <p class="contact_page_info_text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -25,22 +25,23 @@
         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
     </p>
-    <div class="contact_page_group_of_name_field">
-        <div id="contact_page_name_field_1" w3-include-html="../HTML_Modules/name_field.html"></div>
-        <div id="contact_page_name_field_2" w3-include-html="../HTML_Modules/name_field.html"></div>
-        <div id="contact_page_name_field_3" w3-include-html="../HTML_Modules/name_field.html"></div>
-        <div id="contact_page_name_field_4" w3-include-html="../HTML_Modules/name_field.html"></div>
-        <div class="text_area_div">
-            <label for="text_area">Lorem Ipsum</label>
-            <textarea id="contact_page_text_area" rows="6" cols="30" required></textarea>
-            <input id="contact-btn" type="submit" value="Enviar">
+    <form id="contact_form">
+        <div class="contact_page_group_of_name_field">
+            <div id="contact_page_name_field_1" w3-include-html="../HTML_Modules/name_field.html"></div>
+            <div id="contact_page_name_field_2" w3-include-html="../HTML_Modules/name_field.html"></div>
+            <div id="contact_page_name_field_3" w3-include-html="../HTML_Modules/email_field.html"></div>
+            <div id="contact_page_name_field_4" w3-include-html="../HTML_Modules/name_field.html"></div>
+            <div class="text_area_div">
+                <label for="text_area">Lorem Ipsum</label>
+                <textarea id="contact_page_text_area" rows="6" cols="30" required></textarea>
+                <input id="contact-btn" type="submit" value="Enviar">
+            </div>
         </div>
-    </div>
-
+    </form>
 </div>
+<footer w3-include-html="../HTML_Modules/footer.html"></footer>
 <script>
     w3IncludeHTML();
 </script>
-<footer w3-include-html="/HTML_Modules/footer.html"></footer>
 </body>
 </html>
