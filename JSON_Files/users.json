@@ -1,0 +1,28 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Pablo",
+      "apellidos": "Sánchez Melián",
+      "email": "juanperez@example.com",
+      "contraseña": "12345",
+      "foto": "../Resources/libros_apilados.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "María",
+      "apellidos": "Carreras Delgado",
+      "email": "mariagomez@example.com",
+      "contraseña": "qwerty",
+      "foto": "../Resources/libros_apilados.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Pedro",
+      "apellidos": "Rodríguez Pérez",
+      "email": "pedrorodriguez@example.com",
+      "contraseña": "abcde",
+      "foto": "../Resources/libros_apilados.jpg"
+    }
+  ]
+}
