@@ -1,3 +1,14 @@
-#schedule_page{
-    align-self: center;
+
+@media only screen and (min-width: 1024px) {
+    #schedule_page {
+        align-self: center;
+    }
+    .day_card{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    #schedule_page {
+        display: none
+    }
 }

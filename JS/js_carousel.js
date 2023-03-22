@@ -27,3 +27,13 @@ function nextSlide() {
 
 prevButton.addEventListener('click', prevSlide);
 nextButton.addEventListener('click', nextSlide);
+function nextSlide() {
+    slideIndex++;
+    if (slideIndex >= slides.children.length) {
+        slideIndex = 0;
+    }
+    slideTo(slideIndex);
+}
+
+prevButton.addEventListener('click', prevSlide);
+nextButton.addEventListener('click', nextSlide);
