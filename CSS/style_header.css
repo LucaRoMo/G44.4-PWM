@@ -4,7 +4,7 @@ body {
 }
 
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 801px) {
 
   .website_header {
     display: grid;
@@ -65,7 +65,7 @@ body {
     display: none;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .website_header {
     display: flex;
     flex-direction: row;
