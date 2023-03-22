@@ -1,5 +1,8 @@
 <link rel="stylesheet" href="/CSS/style_name_field.css">
 <div class="name_field_txt_field">
   <label for="user"><b>Nombre</b></label>
-  <input type="text" name="user" id="user" pattern ="^[a-zA-Z]" placeholder="Lorem Ipsum" title="Pon nombre y apellidos" required>
+  <input type="text" name="user" id="user"
+         pattern ="(^[A-Z])[a-z]{2,}"
+         placeholder="Lorem Ipsum"
+         title="Pon tu nombre. Ejemplo: Paco" required>
 </div>
