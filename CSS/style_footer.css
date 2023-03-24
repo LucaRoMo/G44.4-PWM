@@ -3,7 +3,7 @@
     grid-gap: 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: 6em 2em;
-    background-color: grey;
+    background-color: skyblue;
     grid-template-areas:
         "texto"
         "imagenes";
