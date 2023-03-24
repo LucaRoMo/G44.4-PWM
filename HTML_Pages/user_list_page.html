@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <title>Lista de usuarios</title>
     <link rel="stylesheet" href="../CSS/style_user_list.css">
-    <script src="https://www.w3schools.com/lib/w3data.js"></script>
+    <script src="../JS/module_loader.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', init);
+        function init(){
+            module_loader("../HTML_Modules/header.html", "header-user-table");
+            module_loader("../HTML_Modules/user_list.html", "user-table");
+            module_loader("../HTML_Modules/user.html", "card-information-user-table");
+            module_loader("../HTML_Modules/footer.html", "footer-user-table");
+        }
+    </script>
 </head>
 <body>
-        <header id="header-user-table" w3-include-html="../HTML_Modules/header.html"></header>
-        <div id="user-table" w3-include-html="../HTML_Modules/user_list.html"></div>
-        <div id="card-information-user-table" w3-include-html="../HTML_Modules/user.html"></div>
-        <footer id="footer-user-table" w3-include-html="../HTML_Modules/footer.html"></footer>
 
+        <header id="header-user-table"></header>
+        <div id="user-table"></div>
+        <div id="card-information-user-table"></div>
+        <footer id="footer-user-table"></footer>
 
-<script>
-    w3IncludeHTML();
-</script>
 </body>
 </html>
