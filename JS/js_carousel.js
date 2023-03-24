@@ -1,39 +1,49 @@
-const carousel = document.querySelector('.carousel');
-const slides = carousel.querySelector('.slides');
-const prevButton = carousel.querySelector('.prev');
-const nextButton = carousel.querySelector('.next');
-const slideWidth = carousel.clientWidth;
-let slideIndex = 0;
+const imagenes = [
+    '../Resources/wireframe.png',
+    '../Resources/twitter.png',
+    '../Resources/LinkedIn.png',
+    '../Resources/niños_estudiando.jpg'];
+function crearGaleria(contenedor) {
+    let cont = 0;
 
-function slideTo(index) {
-    slides.style.transform = `translateX(-${index * slideWidth}px)`;
-}
-
-function prevSlide() {
-    slideIndex--;
-    if (slideIndex < 0) {
-        slideIndex = slides.children.length - 1;
+    function mostrarImagen() {
+        const img = contenedor.querySelector('img');
+        img.src = imagenes[cont];
     }
-    slideTo(slideIndex);
-}
 
-function nextSlide() {
-    slideIndex++;
-    if (slideIndex >= slides.children.length) {
-        slideIndex = 0;
+    function retroceder() {
+        cont--;
+        if (cont < 0) {
+            cont = imagenes.length - 1;
+        }
+        mostrarImagen();
     }
-    slideTo(slideIndex);
-}
 
-prevButton.addEventListener('click', prevSlide);
-nextButton.addEventListener('click', nextSlide);
-function nextSlide() {
-    slideIndex++;
-    if (slideIndex >= slides.children.length) {
-        slideIndex = 0;
+    function avanzar() {
+        cont++;
+        if (cont >= imagenes.length) {
+            cont = 0;
+        }
+        mostrarImagen();
     }
-    slideTo(slideIndex);
+
+    contenedor.innerHTML = `
+    <div class="contenedor-imagen">
+      <img src="${imagenes[0]}" alt="imagenes">
+    </div>
+    <div class="contenedor-botones">
+      <button class="atras">Atrás</button>
+      <button class="adelante">Adelante</button>
+    </div>
+  `;
+
+    contenedor.querySelector('.atras').addEventListener('click', retroceder);
+    contenedor.querySelector('.adelante').addEventListener('click', avanzar);
+
+    mostrarImagen();
 }
 
-prevButton.addEventListener('click', prevSlide);
-nextButton.addEventListener('click', nextSlide);
+document.addEventListener('DOMContentLoaded', () => {
+    const contenedor = document.querySelector('.contenedor');
+    crearGaleria(contenedor);
+});

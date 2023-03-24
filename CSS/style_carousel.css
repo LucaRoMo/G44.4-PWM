@@ -1,40 +1,27 @@
-.carousel {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
+.contenedor{
+    display: grid;
+    grid-template-rows: 1fr 2em;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+
 }
 
-.slides {
-    display: flex;
-    width: 100%;
-    height: 100%;
+.contenedor-imagen{
+    justify-self: center;
+    align-items: center;
 }
 
-.slides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.contenedor-botones {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 5em 5em;
+    grid-gap: 2em;
+    justify-content: space-evenly;
 }
 
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 24px;
-    text-align: center;
-    cursor: pointer;
+.contenedor img {
+    max-height: 20em;
+    height: auto;
+    width: 70em;
 }
 
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
