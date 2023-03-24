@@ -1,31 +1,32 @@
-{
-  "usuarios": [
-    {
-      "id": 1,
-      "nombre": "Pablo",
-      "apellidos": "Sánchez Melián",
-      "email": "juanperez@example.com",
-      "contraseña": "12345",
-      "foto": "../Resources/libros_apilados.jpg",
-      "rol": "profesor"
-    },
-    {
-      "id": 2,
-      "nombre": "María",
-      "apellidos": "Carreras Delgado",
-      "email": "mariagomez@example.com",
-      "contraseña": "qwerty",
-      "foto": "../Resources/libros_apilados.jpg",
-      "rol": "profesor"
-    },
-    {
-      "id": 3,
-      "nombre": "Pedro",
-      "apellidos": "Rodríguez Pérez",
-      "email": "pedrorodriguez@example.com",
-      "contraseña": "abcde",
-      "foto": "../Resources/libros_apilados.jpg",
-      "rol": "profesor"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "nombre": "Pablo",
+    "apellidos": "Sánchez Melián",
+    "email": "juanperez@example.com",
+    "contraseña": "12345",
+    "foto": "../Resources/libros_apilados.jpg",
+    "rol": "profesor",
+    "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"]
+  },
+  {
+    "id": 2,
+    "nombre": "María",
+    "apellidos": "Carreras Delgado",
+    "email": "mariagomez@example.com",
+    "contraseña": "qwerty",
+    "foto": "../Resources/libros_apilados.jpg",
+    "rol": "estudiante",
+    "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"]
+  },
+  {
+    "id": 3,
+    "nombre": "Pedro",
+    "apellidos": "Rodríguez Pérez",
+    "email": "pedrorodriguez@example.com",
+    "contraseña": "abcde",
+    "foto": "../Resources/libros_apilados.jpg",
+    "rol": "administrador",
+    "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"]
+  }
+]

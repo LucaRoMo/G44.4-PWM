@@ -1,34 +1,29 @@
 <link rel="stylesheet" href="../CSS/style_list.css">
 <script src="../JS/module_loader.js"></script>
-<script src="../JS/user_list_table.js"></script>
 <div class ="list_page_container">
   <div class="list_table_container">
     <table class="list_table">
       <thead>
       <tr class="user-list-header">
+        <th>Foto de perfil</th>
         <th class="sticky">Nombre</th>
         <th>Apellidos</th>
         <th>Rol</th>
         <th>Asignatura(s)</th>
       </tr>
       </thead>
-      <tbody>
-      <tr class="user-list-row"> <!--Fila 1-->
-        <!--<td class="sticky"><img src="images/wireframe-image.png" alt="user-icon"></td>-->
-        <td class="sticky" id="user_list_name1"><img src="../Resources/wireframe.png" alt="user-icon"></td><!--Nombre-->
-        <td id="user_list_lastname1"></td><!--Apellidos-->
-        <td id="user_list_rol1"></td><!--Rol-->
-        <td id="user_list_subject1"></td><!--Asignatura(s)-->
-      </tr>
-
-      <tr class="user-list-row"> <!--Fila 1-->
-        <!--<td class="sticky"><img src="images/wireframe-image.png" alt="user-icon"></td>-->
-        <td class="sticky" id="user_list_name2"><img src="../Resources/wireframe.png" alt="user-icon">Lorem ipsum</td><!--Nombre-->
-        <td id="user_list_lastname2">Lorem ipsum</td><!--Apellidos-->
-        <td id="user_list_rol2">Lorem ipsum</td><!--Rol-->
-        <td id="user_list_subject2">Lorem ipsum Lorem ipsum Lorem ipsum</td><!--Asignatura(s)-->
-      </tr>
+      <tbody id="user_list_tbody">
       </tbody>
     </table>
+
+    <template id="fila_tabla">
+      <tr> <!--Fila 1-->
+        <td id="user_list_profile_picture" class="sticky"><img src="" alt=""></td>
+        <td id="user_list_name" class="sticky"><!--Nombre-->
+        <td class="user_list_lastname"></td><!--Apellidos-->
+        <td class="user_list_rol"></td><!--Rol-->
+        <td class="user_list_subjects"></td><!--Asignatura(s)-->
+      </tr>
+    </template>
   </div>
 </div>

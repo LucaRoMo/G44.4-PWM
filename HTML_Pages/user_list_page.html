@@ -5,22 +5,57 @@
     <title>Lista de usuarios</title>
     <link rel="stylesheet" href="../CSS/style_user_list.css">
     <script src="../JS/module_loader.js"></script>
+
+</head>
+<body>
+
+    <header id="header-user-table"></header>
+    <div id="user-table"></div>
+    <div id="card-information-user-table"></div>
+    <footer id="footer-user-table"></footer>
     <script>
         document.addEventListener('DOMContentLoaded', init);
         function init(){
             module_loader("../HTML_Modules/header.html", "header-user-table");
-            module_loader("../HTML_Modules/user_list.html", "user-table");
+
+
+
+            fetch("../HTML_Modules/user_list.html")
+                .then((file) => {//fichero HTML
+                    return file.text()
+                })
+                .then((text) => { //texto plano de HTML
+                    document.getElementById("user-table").innerHTML = text;
+
+                    const container = document.querySelector('#user_list_tbody');
+                    const filaTablaTemplate = document.querySelector("#fila_tabla");
+
+                    fetch("../JSON_Files/users.json")
+                        .then((file) => file.json())
+                        .then((users) =>{
+                            users.forEach((user) =>{
+                                const filaTabla = filaTablaTemplate.content.cloneNode(true);
+                                //cargamos cada id y guardamos los datos en ella
+                                console.log(user);
+
+                                filaTabla.querySelector('#user_list_name').textContent = user.nombre;
+                                filaTabla.querySelector('.user_list_lastname').textContent = user.apellidos;
+                                filaTabla.querySelector('.user_list_rol').textContent = user.rol;
+                                filaTabla.querySelector('.user_list_subjects').textContent = user.asignaturas;
+                                filaTabla.querySelector('#user_list_profile_picture img').src = user.foto;
+                                filaTabla.querySelector('#user_list_profile_picture img').alt = user.nombre + user.apellidos;
+                                container.appendChild(filaTabla);
+
+                            });
+                        })
+                        .catch(error => console.error(error));
+                })
+
+
+
             module_loader("../HTML_Modules/user.html", "card-information-user-table");
             module_loader("../HTML_Modules/footer.html", "footer-user-table");
         }
     </script>
-</head>
-<body>
-
-        <header id="header-user-table"></header>
-        <div id="user-table"></div>
-        <div id="card-information-user-table"></div>
-        <footer id="footer-user-table"></footer>
-
 </body>
 </html>
