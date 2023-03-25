@@ -41,7 +41,7 @@
                         .then((file) => file.json())
                         .then((users) => {
                           const user = users.find(u => u.id === 1);
-                          document.getElementById("elongated_card_text").textContent = user.nombre + " " + user.apellidos;
+                          document.querySelector(".elongated_card_text").textContent = user.nombre + " " + user.apellidos;
                           document.querySelector(".elongated_card_image").src = user.foto;
                           document.querySelector(".elongated_card_image").alt = user.nombre + " " + user.apellidos;
                         })
@@ -56,15 +56,15 @@
                 document.getElementById("user_profile_container_cards").innerHTML = text;
 
                 const container = document.querySelector("#user_profile_container_cards");
-                const templateCard = document.querySelector("#elongated_card_container");
+                const templateCard = document.querySelector(".template_elongated_card");
                 fetch("../JSON_Files/subjects.json")
                         .then((file) => file.json())
                         .then((subjects) => {
                           subjects.forEach((subject) => {
                             const card = templateCard.content.cloneNode(true);
-                            card.querySelector(".elongated_card_text").textContent = subject.nombre;
-                            card.querySelector(".elongated_card_image").src = subject.foto;
-                            card.querySelector(".elongated_card_image").alt = subject.nombre;
+                            card.querySelector(".template_elongated_card_text").textContent = subject.nombre;
+                            card.querySelector(".template_elongated_card_image").src = subject.foto;
+                            card.querySelector(".template_elongated_card_image").alt = subject.nombre;
                             container.appendChild(card);
                           });
                         })
