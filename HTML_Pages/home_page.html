@@ -3,17 +3,28 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Lorem ipsum</title>
+        <title>Home</title>
         <link rel="stylesheet" type="text/css" href="../CSS/style_home_page.css">
-        <script src="https://www.w3schools.com/lib/w3data.js"></script>
+        <script src="../JS/module_loader.js"></script>
     </head>
     <body id="home_page_body">
-        <header w3-include-html="../HTML_Modules/header.html"></header>
-        <div id="noticias_principal" w3-include-html="../HTML_Modules/news.html"></div>
-        <footer w3-include-html="../HTML_Modules/footer.html"></footer>
+        <header id="header_contact_page"></header>
+        <div id="noticias_principal"></div>
+        <div class="news_group_of_vertical_cards">
+            <div id="news_card1"></div>
+            <div id="news_card2"></div>
+            <div id="news_card3"></div>
+        </div>
+        <footer id="footer_contact_page"></footer>
 
         <script>
-            w3IncludeHTML();
+            function init() {
+                module_loader("../HTML_Modules/header.html", "header_contact_page");
+                module_loader("../HTML_Modules/news.html", "noticias_principal");
+                module_loader("../HTML_Modules/footer.html", "footer_contact_page");
+
+            }
+            document.addEventListener('DOMContentLoaded', init);
         </script>
     </body>
 
