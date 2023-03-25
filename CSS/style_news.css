@@ -1,11 +1,12 @@
 .news {
-    background-color: #aaa;
+    background-color: lightsteelblue;
     text-align: center;
     width: 66%;
     justify-content: center;
     margin: auto;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .news_group_of_vertical_cards{
@@ -19,9 +20,9 @@
     width: 100%;
     height: auto;
 }
-.news img{
+/*.news img{
     width: 100%;
-}
+}*/
 .news_card{
     padding-right: 1%;
     padding-left: 1%;
@@ -29,5 +30,34 @@
 
 .contenedor-imagen img{
     width: 100%;
-    height: 17em;
+    height: 10em;
+}
+#news_texto{
+    overflow-y: scroll;
+}
+body {
+    scrollbar-width: none; /* para Firefox */
+    -ms-overflow-style: none; /* para IE y Edge */
+}
+
+/* Añadir un scrollbar personalizado */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Personalizar el track del scrollbar */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Personalizar el thumb del scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+/* Personalizar el thumb del scrollbar cuando se está desplazando */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }
