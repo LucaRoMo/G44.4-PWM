@@ -32,16 +32,17 @@
 
 
       //Esto carga el nombre del usuario
-      fetch("../HTML_Modules/elongated_card.html").then((file) => {
+      fetch("../HTML_Modules/elongated_card.html")
+              .then((file) => {
                 return file.text()
               }).then((text) => {
                 document.getElementById("user_profile_name_card").innerHTML = text;
-                
+
                 fetch("../JSON_Files/users.json")
                         .then((file) => file.json())
                         .then((users) => {
                           const user = users.find(u => u.id === 1);
-                          document.getElementById("elongated_card_text").textContent = user.nombre + " " + user.apellidos;
+                          document.querySelector(".elongated_card_text").textContent = user.nombre + " " + user.apellidos;
                           document.querySelector(".elongated_card_image").src = user.foto;
                           document.querySelector(".elongated_card_image").alt = user.nombre + " " + user.apellidos;
                         })

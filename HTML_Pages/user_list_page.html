@@ -18,8 +18,6 @@
         function init(){
             module_loader("../HTML_Modules/header.html", "header-user-table");
 
-
-
             fetch("../HTML_Modules/user_list.html")
                 .then((file) => {//fichero HTML
                     return file.text()
@@ -52,8 +50,21 @@
                 })
 
 
+            fetch("../HTML_Modules/user.html")
+                .then((file) => {
+                    return file.text()
+                }).then((text) => {
+                    document.getElementById("card-information-user-table").innerHTML = text;
 
-            module_loader("../HTML_Modules/user.html", "card-information-user-table");
+                    fetch("../JSON_Files/users.json")
+                        .then((file) => file.json())
+                        .then((users) => {
+                            const user = users.find(u => u.id === 1);
+                            document.getElementById('card-information-user-table').textContent = user.nombre + ' ' + user.apellidos + ' v ';
+                        })
+            })
+
+
             module_loader("../HTML_Modules/footer.html", "footer-user-table");
         }
     </script>
