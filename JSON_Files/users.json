@@ -19,8 +19,8 @@
     "email": "mariagomez@example.com",
     "contraseña": "qwerty",
     "foto": "../Resources/libros_apilados.jpg",
-    "rol": "estudiante"
-
+    "rol": "estudiante",
+    "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"]
   },
   {
     "id": 3,

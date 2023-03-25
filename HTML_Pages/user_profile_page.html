@@ -32,11 +32,12 @@
 
 
       //Esto carga el nombre del usuario
-      fetch("../HTML_Modules/elongated_card.html").then((file) => {
+      fetch("../HTML_Modules/elongated_card.html")
+              .then((file) => {
                 return file.text()
               }).then((text) => {
                 document.getElementById("user_profile_name_card").innerHTML = text;
-                
+
                 fetch("../JSON_Files/users.json")
                         .then((file) => file.json())
                         .then((users) => {
