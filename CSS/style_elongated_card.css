@@ -1,7 +1,9 @@
+
 .elongated_card_container, .template_elongated_card_container{
     border: solid black;
     background-color: lightblue;
-    width: auto;
+    height: 15vh;
+    width: 100vh;
     margin: 0.5em;
     padding: 0.2em;
 
@@ -13,11 +15,11 @@
     font-size: 1.5em;
 }
 .elongated_card_image, .template_elongated_card_image{
-    width: 4em;
-    height: 4em;
+    width: 10vh;
+    height: 10vh;
     display: inline-block;
     vertical-align: middle;
-    margin: 1em;
+    margin: 2vh;
     border: 0.1em solid black;
     border-radius: 3em;
 }
