@@ -20,15 +20,9 @@
     <script>
         function init() {
             module_loader("../HTML_Modules/header.html", "header-subject-page");
-            //module_loader("../HTML_Modules/group_element.html", "subject_page_button_group");
 
             name_and_module_loader("../HTML_Modules/group_element.html","subject_page_button_group", "group_element_text", "Tema 1")
-            /*fetch("../HTML_Modules/group_element.html").then((file) => {
-                return file.text()
-            }).then((text) => {
-                document.getElementById("subject_page_button_group").innerHTML = text;
-                document.querySelector(".group_element_text").textContent = "Tema 1";
-            })*/
+
 
             module_loader("../HTML_Modules/elongated_card.html", "subject_page_elongated_card1");
             module_loader("../HTML_Modules/elongated_card.html", "subject_page_elongated_card2");

@@ -19,11 +19,7 @@
             <div id="contact_page_icon_text_3"></div>
         </div>
         <p class="contact_page_info_text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
+            AQui ponemos donde se encuentra
         </p>
         <div class="contact_page_group_of_name_field">
             <div id="contact_page_name_field_1"></div>
@@ -44,12 +40,47 @@
         module_loader("../HTML_Modules/header.html", "header_contact_page");
         module_loader("../HTML_Modules/icon_text.html", "contact_page_icon_text_1");
         module_loader("../HTML_Modules/icon_text.html", "contact_page_icon_text_2");
-        module_loader("../HTML_Modules/footer.html", "footer_contact_page");
-        name_and_module_loader("../HTML_Modules/name_field.html", "contact_page_name_field_1","label1", "Nombre");
-        name_and_module_loader("../HTML_Modules/name_field.html", "contact_page_name_field_2","label1", "Apellidos");
-        name_and_module_loader("../HTML_Modules/name_field.html", "contact_page_name_field_3","label1", "Email");
-        name_and_module_loader("../HTML_Modules/name_field.html", "contact_page_name_field_4","label1", "Teléfono");
         module_loader("../HTML_Modules/icon_text.html", "contact_page_icon_text_3");
+        module_loader("../HTML_Modules/footer.html", "footer_contact_page");
+        //name_and_module_loader("../HTML_Modules/name_field.html", "contact_page_name_field_1","label1", "Nombre");
+        //name_and_module_loader("../HTML_Modules/name_field.html", "contact_page_name_field_2","label1", "Apellidos");
+        //name_and_module_loader("../HTML_Modules/name_field.html", "contact_page_name_field_3","label1", "Email");
+        //name_and_module_loader("../HTML_Modules/name_field.html", "contact_page_name_field_4","label1", "Teléfono");
+
+        //Cargamos
+        fetch("../HTML_Modules/name_field.html")
+            .then((file) => {
+                return file.text()
+            })
+            .then((text) => {
+                document.getElementById("contact_page_name_field_1").innerHTML = text;
+
+                const container = document.querySelector(".contact_page_group_of_name_field");
+                const templateField = document.querySelector(".field_text_label");
+
+                const Field_name = templateField.content.cloneNode(true);
+                Field_name.querySelector(".label").textContent = "Nombre";
+                Field_name.querySelector(".text_Field").placeholder = "Nombre";
+
+                const Field_surname = templateField.content.cloneNode(true);
+                Field_surname.querySelector(".label").textContent = "Apellidos";
+                Field_surname.querySelector(".text_Field").placeholder = "Apellidos";
+
+                const Field_email = templateField.content.cloneNode(true);
+                Field_email.querySelector(".label").textContent = "Email";
+                Field_email.querySelector(".text_Field").placeholder = "Email";
+
+                const Field_tlf = templateField.content.cloneNode(true);
+                Field_tlf.querySelector(".label").textContent = "Teléfono";
+                Field_tlf.querySelector(".text_Field").placeholder = "Teléfono";
+
+                container.appendChild(Field_name);
+                container.appendChild(Field_surname);
+                container.appendChild(Field_email);
+                container.appendChild(Field_tlf);
+
+            })
+
     }
         document.addEventListener('DOMContentLoaded', init);
 
