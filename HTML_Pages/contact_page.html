@@ -5,6 +5,7 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="../CSS/style_contact_page.css">
     <script src="../JS/module_loader.js"></script>
+    <script src="../JS/name_and_module_loader.js"></script>
 </head>
 
 
@@ -43,14 +44,15 @@
         module_loader("../HTML_Modules/header.html", "header_contact_page");
         module_loader("../HTML_Modules/icon_text.html", "contact_page_icon_text_1");
         module_loader("../HTML_Modules/icon_text.html", "contact_page_icon_text_2");
-        module_loader("../HTML_Modules/icon_text.html", "contact_page_icon_text_3");
-        module_loader("../HTML_Modules/name_field.html", "contact_page_name_field_1");
-        module_loader("../HTML_Modules/name_field.html", "contact_page_name_field_2");
-        module_loader("../HTML_Modules/name_field.html", "contact_page_name_field_3");
-        module_loader("../HTML_Modules/name_field.html", "contact_page_name_field_4");
         module_loader("../HTML_Modules/footer.html", "footer_contact_page");
+        name_and_module_loader("../HTML_Modules/name_field.html", "contact_page_name_field_1","label1", "Nombre");
+        name_and_module_loader("../HTML_Modules/name_field.html", "contact_page_name_field_2","label1", "Apellidos");
+        name_and_module_loader("../HTML_Modules/name_field.html", "contact_page_name_field_3","label1", "Email");
+        name_and_module_loader("../HTML_Modules/name_field.html", "contact_page_name_field_4","label1", "Teléfono");
+        module_loader("../HTML_Modules/icon_text.html", "contact_page_icon_text_3");
     }
         document.addEventListener('DOMContentLoaded', init);
+
 </script>
 
 </body>
