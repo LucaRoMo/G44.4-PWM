@@ -2,10 +2,8 @@
     background-color: grey;
     width:auto;
     height: 20em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    margin-bottom: 2em;
-    margin-top: 2em;
+    margin: 2em;
+    padding: 2em;
 }
 
 .login_container h1{
