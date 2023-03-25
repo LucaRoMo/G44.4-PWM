@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <title>Información</title>
     <link rel="stylesheet" type="text/css" href="../CSS/style_information_page.css">
-    <script src="https://www.w3schools.com/lib/w3data.js"></script>
+    <script src="../JS/module_loader.js"></script>
 </head>
 <body>
-  <header w3-include-html="../HTML_Modules/header.html"></header>
+  <header id="header_information_page"></header>
 
-  <div class="tarjeta_informacion" w3-include-html="../HTML_Modules/information.html"></div>
-  <div class="tarjeta_informacion" w3-include-html="../HTML_Modules/information.html"></div>
+  <div id="tarjeta_information1" class="tarjeta_informacion"></div>
+  <div id="tarjeta_information2" class="tarjeta_informacion"></div>
 
-  <footer w3-include-html="../HTML_Modules/footer.html"></footer>
+  <footer id="footer_information_page"></footer>
   <script>
-    w3IncludeHTML();
+      function init() {
+          module_loader("../HTML_Modules/header.html", "header_information_page");
+          module_loader("../HTML_Modules/information.html", "tarjeta_information1");
+          module_loader("../HTML_Modules/information.html", "tarjeta_information2");
+          module_loader("../HTML_Modules/footer.html", "footer_information_page");
+      }
+      document.addEventListener('DOMContentLoaded', init);
   </script>
 </body>
 </html>

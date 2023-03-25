@@ -3,19 +3,19 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../CSS/style_login_page.css">
-    <script src="https://www.w3schools.com/lib/w3data.js"></script>
+    <script src="../JS/module_loader.js"></script>
     <title>Log In</title>
 </head>
 <body>
-
+    <header id="header_login_page"></header>
     <div class="login_container">
         <h1>Iniciar sesión</h1>
         <div class="login_form_container">
             <form method="post" class="post">
                 <div id="log-in">
-                    <div class="login_user_name" w3-include-html="../HTML_Modules/name_field.html"></div>
-                    <div class="login_pass_user" w3-include-html="../HTML_Modules/password_field.html"></div>
-                    <div class="login_pass_remember" w3-include-html="../HTML_Modules/checkBox.html"></div>
+                    <div id="login_user_name"></div>
+                    <div id="login_pass_user"></div>
+                    <div id="login_pass_remember"></div>
                     <div class="login_button">
                         <input id="login-btn" type="submit" value="Iniciar sesión">
                     </div>
@@ -23,12 +23,20 @@
                 </div>
             </form>
             <div class="academy-logo">
-                <img src="../Resources/" alt="Logo de la academia">
+                <img src="../Resources/wireframe-image.png" alt="Logo de la academia">
             </div>
         </div>
     </div>
+    <footer id="footer_login_page"></footer>
     <script>
-        w3IncludeHTML();
+        function init() {
+            module_loader("../HTML_Modules/header.html", "header_login_page");
+            module_loader("../HTML_Modules/name_field.html", "login_user_name");
+            module_loader("../HTML_Modules/password_field.html", "login_pass_user");
+            module_loader("../HTML_Modules/checkBox.html", "login_pass_remember");
+            module_loader("../HTML_Modules/footer.html", "footer_login_page");
+        }
+        document.addEventListener('DOMContentLoaded', init);
     </script>
 </body>
 </html>

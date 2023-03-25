@@ -7,7 +7,10 @@
     "contraseña": "12345",
     "foto": "../Resources/libros_apilados.jpg",
     "rol": "profesor",
-    "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"]
+    "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"],
+    "días": ["Lunes", "Miércoles", "Viernes"],
+    "hora_inicio": ["15:00 PM", "16:00 PM", "17:00 PM"],
+    "hora_fin": ["16:00 PM", "17:00 PM", "18:00 PM"]
   },
   {
     "id": 2,
@@ -16,8 +19,8 @@
     "email": "mariagomez@example.com",
     "contraseña": "qwerty",
     "foto": "../Resources/libros_apilados.jpg",
-    "rol": "estudiante",
-    "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"]
+    "rol": "estudiante"
+
   },
   {
     "id": 3,

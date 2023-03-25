@@ -3,20 +3,31 @@
   <head>
       <meta charset="UTF-8">
       <title>Horario</title>
-      <script src="https://www.w3schools.com/lib/w3data.js"></script>
+      <script src="../JS/module_loader.js"></script>
       <link rel="stylesheet" type="text/css" href="../CSS/style_schedule_page.css">
   </head>
   <body>
-    <header w3-include-html="../HTML_Modules/header.html" ></header>
-    <div id="schedule_page" w3-include-html="../HTML_Modules/schedule.html"></div>
-    <div class="day_card" w3-include-html="../HTML_Modules/user.html"></div>
-    <div class="day_card" w3-include-html="../HTML_Modules/user.html"></div>
-    <div class="day_card" w3-include-html="../HTML_Modules/user.html"></div>
-    <div class="day_card" w3-include-html="../HTML_Modules/user.html"></div>
-    <div class="day_card" w3-include-html="../HTML_Modules/user.html"></div>
-    <footer w3-include-html="../HTML_Modules/footer.html"></footer >
+    <header id="header_schedule_page"></header>
+    <div id="schedule_page"></div>
+    <div id="login_schedule_name01" class="day_card"></div>
+    <div id="login_schedule_name02" class="day_card"></div>
+    <div id="login_schedule_name03" class="day_card"></div>
+    <div id="login_schedule_name04" class="day_card"></div>
+    <div id="login_schedule_name05" class="day_card"></div>
+
+    <footer id="footer_schedule_page"></footer>
     <script>
-      w3IncludeHTML();
+        function init() {
+            module_loader("../HTML_Modules/header.html", "header_schedule_page");
+            module_loader("../HTML_Modules/schedule.html", "schedule_page");
+            module_loader("../HTML_Modules/user.html", "login_schedule_name01");
+            module_loader("../HTML_Modules/user.html", "login_schedule_name02");
+            module_loader("../HTML_Modules/user.html", "login_schedule_name03");
+            module_loader("../HTML_Modules/user.html", "login_schedule_name04");
+            module_loader("../HTML_Modules/user.html", "login_schedule_name05");
+            module_loader("../HTML_Modules/footer.html", "footer_schedule_page");
+        }
+        document.addEventListener('DOMContentLoaded', init);
     </script>
   </body>
 </html>

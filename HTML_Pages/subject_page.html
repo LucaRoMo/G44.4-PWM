@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Asignatura</title>
-    <script src="https://www.w3schools.com/lib/w3data.js"></script>
+    <script src="../JS/module_loader.js"></script>
     <link rel="stylesheet" href="../CSS/style_subject_page.css">
 </head>
 <body>
-    <header id="header-subject-page" w3-include-html="../HTML_Modules/header.html"></header>
+    <header id="header-subject-page"></header>
     <h1>Nombre de asignatura</h1>
-    <div id="subject_page_button_group" w3-include-html="../HTML_Modules/group_element.html"></div>
-    <div id="subject_page_elongated_card1" w3-include-html="../HTML_Modules/elongated_card.html"></div>
-    <div id="subject_page_elongated_card2" w3-include-html="../HTML_Modules/elongated_card.html"></div>
-    <div id="subject_page_elongated_card3" w3-include-html="../HTML_Modules/elongated_card.html"></div>
-    <div id="subject_page_elongated_card4" w3-include-html="../HTML_Modules/elongated_card.html"></div>
+    <div id="subject_page_button_group"></div>
+    <div id="subject_page_elongated_card1"></div>
+    <div id="subject_page_elongated_card2"></div>
+    <div id="subject_page_elongated_card3"></div>
+    <div id="subject_page_elongated_card4"></div>
 
+    <footer id="footer-subject-page"></footer>
+    <script>
+        function init() {
+            module_loader("../HTML_Modules/header.html", "header-subject-page");
+            module_loader("../HTML_Modules/group_element.html", "subject_page_button_group");
+            module_loader("../HTML_Modules/elongated_card.html", "subject_page_elongated_card1");
+            module_loader("../HTML_Modules/elongated_card.html", "subject_page_elongated_card2");
+            module_loader("../HTML_Modules/elongated_card.html", "subject_page_elongated_card3");
+            module_loader("../HTML_Modules/elongated_card.html", "subject_page_elongated_card4");
 
-    <footer id="footer-subject-page" w3-include-html="../HTML_Modules/footer.html"></footer>
-<script>
-    w3IncludeHTML();
-</script>
+            module_loader("../HTML_Modules/footer.html", "footer-subject-page");
+        }
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
 </body>
 </html>
