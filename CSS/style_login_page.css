@@ -1,7 +1,11 @@
 .login_container{
     background-color: grey;
-    width:55em;
+    width:auto;
     height: 20em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
 }
 
 .login_container h1{
@@ -24,4 +28,9 @@
 
 .login_button input{
     width: 15em;
+}
+
+.academy-logo img{
+    height: 12em;
+    width: 17em;
 }
