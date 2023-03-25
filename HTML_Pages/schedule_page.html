@@ -19,13 +19,83 @@
     <script>
         function init() {
             module_loader("../HTML_Modules/header.html", "header_schedule_page");
-            module_loader("../HTML_Modules/schedule.html", "schedule_page");
+            //module_loader("../HTML_Modules/schedule.html", "schedule_page");
             module_loader("../HTML_Modules/user.html", "login_schedule_name01");
             module_loader("../HTML_Modules/user.html", "login_schedule_name02");
             module_loader("../HTML_Modules/user.html", "login_schedule_name03");
             module_loader("../HTML_Modules/user.html", "login_schedule_name04");
             module_loader("../HTML_Modules/user.html", "login_schedule_name05");
             module_loader("../HTML_Modules/footer.html", "footer_schedule_page");
+
+            fetch("../HTML_Modules/schedule.html")
+                .then((file) => {
+                    return file.text()
+                })
+                .then((text) => {
+                    document.getElementById("schedule_page").innerHTML = text;
+
+                    const container = document.querySelector(".schedule");
+                    const filaTablaTemplate = document.querySelector(".fila_tabla_schedule");
+
+                    let infoMatriz = new Array(6);
+                    for(let i = 0; i < 6; i++){
+                        infoMatriz[i] = new Array(5);
+                    }
+                    fetch("../JSON_Files/schedule.json")
+                        .then((file) => file.json())
+                        .then((horas) => {
+
+                            let i = 0;
+                            horas["lunes"].forEach((hora) => {
+
+
+                                infoMatriz[i][0] = hora;
+                                i++;
+                            })
+                            i = 0;
+                            horas["martes"].forEach((hora) => {
+
+
+                                infoMatriz[i][1] = hora;
+                                i++;
+                            })
+                            i = 0;
+                            horas["miercoles"].forEach((hora) => {
+
+
+                                infoMatriz[i][2] = hora;
+                                i++;
+                            })
+                            i = 0;
+                            horas["jueves"].forEach((hora) => {
+
+
+                                infoMatriz[i][3] = hora;
+                                i++;
+                            })
+                            i = 0;
+                            horas["viernes"].forEach((hora) => {
+
+
+                                infoMatriz[i][4] = hora;
+                                i++;
+                            })
+
+                            console.log(infoMatriz);
+
+                            for(let i = 0; i < 6; i++){
+                                const filaTabla = filaTablaTemplate.content.cloneNode(true);
+                                filaTabla.querySelector('.schedule_hora').textContent = infoMatriz[i][0].hora;
+                                filaTabla.querySelector('.schedule_franja1').textContent = infoMatriz[i][0].actividad;
+                                filaTabla.querySelector('.schedule_franja2').textContent = infoMatriz[i][0].actividad;
+                                filaTabla.querySelector('.schedule_franja3').textContent = infoMatriz[i][0].actividad;
+                                filaTabla.querySelector('.schedule_franja4').textContent = infoMatriz[i][0].actividad;
+                                filaTabla.querySelector('.schedule_franja5').textContent = infoMatriz[i][0].actividad;
+                                container.appendChild(filaTabla)
+                            }
+                        })
+                })
+
         }
         document.addEventListener('DOMContentLoaded', init);
     </script>
