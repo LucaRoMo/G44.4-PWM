@@ -38,6 +38,7 @@
 body {
     scrollbar-width: none; /* para Firefox */
     -ms-overflow-style: none; /* para IE y Edge */
+    scrollbar-arrow-color: skyblue;
 }
 
 /* Añadir un scrollbar personalizado */

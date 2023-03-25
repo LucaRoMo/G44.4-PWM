@@ -43,3 +43,29 @@
     width: 14%;
     height: 100%;
 }
+body {
+    scrollbar-width: none; /* para Firefox */
+    -ms-overflow-style: none; /* para IE y Edge */
+}
+
+/* Añadir un scrollbar personalizado */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Personalizar el track del scrollbar */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Personalizar el thumb del scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+/* Personalizar el thumb del scrollbar cuando se está desplazando */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
