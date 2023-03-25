@@ -1,20 +1,11 @@
-.vertical_card .template_vertical_card{
-    margin: 0.1em;
-    width: 8em;
-    height: 9em;
-    background-color: darkgrey;
-    border-color: black;
-    border-style: solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.vertical_card_div{
+    border: 1px solid black;
+    display: inline;
+    justify-content: space-evenly;
+    width: 10em;
+    background: #555555;
 }
-.vertical_card_img .template_vertical_card_img{
-    max-height: 60px;
-    max-width: 60px;
-    width: 100%;
-}
-.vertical_card_academy_info .template_vertical_card_academy_info{
-    padding-top: 1px;
-    text-align: center;
+.vertical_card122 img{
+    justify-content: center;
+    align-self: center;
 }

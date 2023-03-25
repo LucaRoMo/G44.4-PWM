@@ -5,23 +5,32 @@
   <meta charset="utf-8">
   <title>Chat</title>
   <link rel="stylesheet" type="text/css" href="../CSS/style_chat_page.css">
-  <script src="https://www.w3schools.com/lib/w3data.js"></script>
+  <script src="../JS/module_loader.js"></script>
 </head>
   <body id="chat_page_body">
-    <header id="chat_page_header" w3-include-html="../HTML_Modules/header.html" ></header>
+    <header id="chat_page_header"></header>
     <div class="chat_page_center">
       <div id="chat_page_other_user_zone">
-        <div id="other_user" w3-include-html="../HTML_Modules/chat_user.html"></div>
-        <div id="other_user_card" w3-include-html="../HTML_Modules/elongated_card.html"></div>
+        <div id="other_user"></div>
+        <div id="other_user_card"></div>
       </div>
-      <nav id="chat_page_chat" w3-include-html="../HTML_Modules/chat.html"></nav>
+      <nav id="chat_page_chat"></nav>
       <div id="chat_page_this_user_zone">
-        <div id="this_user" w3-include-html="../HTML_Modules/chat_user.html"></div>
+        <div id="this_user"></div>
       </div>
     </div>
-    <footer id="chat_page_footer" w3-include-html="../HTML_Modules/footer.html"></footer>
+    <footer id="chat_page_footer"></footer>
     <script>
-      w3IncludeHTML();
+        function init() {
+            module_loader("../HTML_Modules/header.html", "chat_page_header");
+            module_loader("../HTML_Modules/chat_user.html", "other_user");
+            module_loader("../HTML_Modules/elongated_card.html", "other_user_card");
+            module_loader("../HTML_Modules/chat.html", "chat_page_chat");
+            module_loader("../HTML_Modules/chat_user.html", "this_user");
+            module_loader("../HTML_Modules/footer.html", "chat_page_footer");
+
+        }
+        document.addEventListener('DOMContentLoaded', init);
     </script>
   </body>
 

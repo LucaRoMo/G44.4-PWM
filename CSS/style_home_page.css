@@ -9,6 +9,13 @@
 .noticias_secundarias{
     display: flex;
     flex-direction: row;
+    margin: 2em;
+    justify-content: space-evenly;
+
+}
+.noticias_secundarias img{
+    height: 10em;
+    width: 10em;
 }
 
 
