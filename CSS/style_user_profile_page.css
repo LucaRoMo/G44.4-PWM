@@ -1,24 +1,28 @@
 .user_profile_container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
     grid-template-areas:
     "groupElement ."
-    "card1 button1"
-    "card2 button2";
+    "cards button1"
+    "cards button2"
+    "cards .";
 }
+
 #user_profile_button_group{
     grid-area: groupElement;
     align-self: stretch;
 }
-#user_profile_elongated_card1{
-    grid-area: card1;
+
+#user_profile_container_cards{
+    grid-area: cards;
+    display: flex;
+    flex-direction: column;
 }
-#user_profile_elongated_card2{
-    grid-area: card2;
-}
+
 #user_profile_button1{
     grid-area: button2;
     height: 50%;
 }
+
 

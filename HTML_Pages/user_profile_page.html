@@ -5,26 +5,77 @@
   <title>MiPerfil</title>
   <link rel="stylesheet" href="../CSS/style_user_profile_page.css">
   <script src="https://www.w3schools.com/lib/w3data.js"></script>
+  <script src="../JS/module_loader.js"></script>
+  <script src="../JS/name_loader.js"></script>
 </head>
 
 <body>
-  <header w3-include-html="../HTML_Modules/header.html">
-  </header>
-  <div id="user_profile_name_card" w3-include-html="../HTML_Modules/elongated_card_user.html"><!--Nombre del perfil -->
+  <header id="header_user_profile"></header>
+  <div id="user_profile_name_card"><!--Nombre del perfil -->
   </div>
   <div class="user_profile_container">
 
-    <div id="user_profile_button_group" w3-include-html="../HTML_Modules/group_element.html"></div>
-    <div id="user_profile_elongated_card1" w3-include-html="../HTML_Modules/elongated_card.html"></div>
-    <div id="user_profile_elongated_card2" w3-include-html="../HTML_Modules/elongated_card.html"></div>
-    <div id="user_profile_button1" w3-include-html="../HTML_Modules/button_element.html"></div>
+    <div id="user_profile_button_group"></div>
+    <div id="user_profile_container_cards">
+      <!-- Aqui quiero poner los cards -->
+    </div>
+    <div id="user_profile_button1"></div>
   </div>
 
-  <footer w3-include-html="../HTML_Modules/footer.html"></footer>
+  <footer id="footer_user_profile"></footer>
+
   <script>
-    w3IncludeHTML();
+    document.addEventListener('DOMContentLoaded', init);
+    function init(){
+      module_loader("../HTML_Modules/header.html", "header_user_profile");
+      module_loader("../HTML_Modules/footer.html","footer_user_profile");
+
+
+      //Esto carga el nombre del usuario
+      fetch("../HTML_Modules/elongated_card.html").then((file) => {
+                return file.text()
+              }).then((text) => {
+                document.getElementById("user_profile_name_card").innerHTML = text;
+                
+                fetch("../JSON_Files/users.json")
+                        .then((file) => file.json())
+                        .then((users) => {
+                          const user = users.find(u => u.id === 1);
+                          document.getElementById("elongated_card_text").textContent = user.nombre + " " + user.apellidos;
+                          document.querySelector(".elongated_card_image").src = user.foto;
+                          document.querySelector(".elongated_card_image").alt = user.nombre + " " + user.apellidos;
+                        })
+              })
+
+      //Esto carga la tarjeta de asignaturas
+      fetch("../HTML_Modules/template_elongated_card.html")
+              .then((file) => {//fichero HTML
+                return file.text()
+              })
+              .then((text) => { //texto plano de HTML
+                document.getElementById("user_profile_container_cards").innerHTML = text;
+
+                const container = document.querySelector("#user_profile_container_cards");
+                const templateCard = document.querySelector("#elongated_card_container");
+                fetch("../JSON_Files/subjects.json")
+                        .then((file) => file.json())
+                        .then((subjects) => {
+                          subjects.forEach((subject) => {
+                            const card = templateCard.content.cloneNode(true);
+                            card.querySelector(".elongated_card_text").textContent = subject.nombre;
+                            card.querySelector(".elongated_card_image").src = subject.foto;
+                            card.querySelector(".elongated_card_image").alt = subject.nombre;
+                            container.appendChild(card);
+                          });
+                        })
+                        .catch(error => console.error(error));
+              })
+
+      module_loader("../HTML_Modules/group_element.html","user_profile_button_group");
+      module_loader("../HTML_Modules/button_element.html","user_profile_button1");
+    }
   </script>
-<script src="../JS/dynamic_Load.js"></script>
+
 </body>
 
 </html>
