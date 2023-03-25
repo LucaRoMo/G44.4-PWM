@@ -18,16 +18,21 @@
         function init(){
             module_loader("../HTML_Modules/header.html", "header-user-table");
 
+            //Cargo el componente
             fetch("../HTML_Modules/user_list.html")
                 .then((file) => {//fichero HTML
                     return file.text()
                 })
                 .then((text) => { //texto plano de HTML
+                    //Donde va el componente
                     document.getElementById("user-table").innerHTML = text;
 
+                    //Contenedor de los templates
                     const container = document.querySelector('#user_list_tbody');
-                    const filaTablaTemplate = document.querySelector("#fila_tabla");
+                    //Template a colocar
+                    const filaTablaTemplate = document.querySelector(".fila_tabla");
 
+                    //Busco la info en el json
                     fetch("../JSON_Files/users.json")
                         .then((file) => file.json())
                         .then((users) =>{

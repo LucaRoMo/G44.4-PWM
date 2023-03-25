@@ -44,6 +44,6 @@ function crearGaleria(contenedor) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const contenedor = document.querySelector('.contenedor');
+    const contenedor = document.querySelector('.home_page_container');
     crearGaleria(contenedor);
 });

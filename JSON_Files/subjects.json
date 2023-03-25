@@ -12,7 +12,7 @@
     "nombre": "Matemáticas 2",
     "curso": 2,
     "max_estudiantes": 20,
-    "id_estudiantes": [3],
+    "id_estudiantes": [3,2],
     "foto": "../Resources/libros_apilados.jpg"
   },
   {

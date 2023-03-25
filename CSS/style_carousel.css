@@ -1,4 +1,4 @@
-.contenedor{
+.home_page_container{
     display: grid;
     grid-template-rows: 1fr 2em;
     grid-template-columns: 1fr;
@@ -20,7 +20,7 @@
     justify-content: space-evenly;
 }
 
-.contenedor img {
+.home_page_container img {
     max-height: 20em;
     height: auto;
     width: 70em;

@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+.noticias_secundarias{
+    display: flex;
+    flex-direction: row;
+}
+
 
 
 
