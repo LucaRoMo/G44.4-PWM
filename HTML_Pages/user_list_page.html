@@ -68,10 +68,7 @@
                             users.forEach((user) => {
                                 const userCard = template.content.cloneNode(true);
                                 console.log(user);
-                                var imagen = userCard.querySelector('.txt-user-card');
-                                var flecha = document.createElement('img');
-                                flecha.src = "../Resources/down-arrow.png"
-                                imagen.appendChild(flecha);
+                                userCard.getElementById("flechita").src = "../Resources/down-arrow.png";
 
 
                                 userCard.querySelector('#paragraph-txt-user-card').textContent = user.nombre + ' ' + user.apellidos;
