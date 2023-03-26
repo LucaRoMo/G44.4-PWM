@@ -1,11 +1,16 @@
 .vertical_card_div{
     border: 1px solid black;
-    display: inline;
-    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 10em;
-    background: #555555;
+    background: lightsteelblue;
+    text-align: center;
 }
-.vertical_card122 img{
-    justify-content: center;
+.vertical_card_img{
     align-self: center;
+    width: 100%;
+    height: 20%;
+    margin-top: 0;
+    padding-top: 0;
 }
