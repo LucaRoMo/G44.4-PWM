@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "texto": "Ubicacion",
+    "foto": "../Resources/libros_apilados.jpg"
+  },
+  {
+    "id": 2,
+    "texto": "Teléfono de contacto",
+    "foto": "../Resources/libros_apilados.jpg"
+  },
+  {
+    "id": 3,
+    "texto": "Email de contacto",
+    "foto": "../Resources/libros_apilados.jpg"
+  }
+]
