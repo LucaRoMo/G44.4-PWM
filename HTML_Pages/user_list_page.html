@@ -39,7 +39,6 @@
                             users.forEach((user) =>{
                                 const filaTabla = filaTablaTemplate.content.cloneNode(true);
                                 //cargamos cada id y guardamos los datos en ella
-                                console.log(user);
 
                                 filaTabla.querySelector('#user_list_name').textContent = user.nombre;
                                 filaTabla.querySelector('.user_list_lastname').textContent = user.apellidos;
@@ -60,12 +59,22 @@
                     return file.text()
                 }).then((text) => {
                     document.getElementById("card-information-user-table").innerHTML = text;
+                    const container = document.querySelector('#card-information-user-table');
+                    const template = document.querySelector('.template_user_card');
 
                     fetch("../JSON_Files/users.json")
                         .then((file) => file.json())
                         .then((users) => {
-                            const user = users.find(u => u.id === 1);
-                            document.getElementById('card-information-user-table').textContent = user.nombre + ' ' + user.apellidos + ' v ';
+                            users.forEach((user) => {
+                                const userCard = template.content.cloneNode(true);
+                                console.log(user);
+                                userCard.querySelector('#paragraph-txt-user-card').textContent = user.nombre + ' ' + user.apellidos + ' v';
+                                userCard.querySelector('.image-user-card img').src = user.foto;
+                                userCard.querySelector('.image-user-card img').alt = user.nombre;
+                                container.appendChild(userCard);
+
+                            })
+
                         })
             })
 
