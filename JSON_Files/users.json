@@ -8,9 +8,6 @@
     "foto": "../Resources/icon.png",
     "rol": "profesor",
     "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"],
-    "días": ["Lunes", "Miércoles", "Viernes"],
-    "hora_inicio": ["15:00 PM", "16:00 PM", "17:00 PM"],
-    "hora_fin": ["16:00 PM", "17:00 PM", "18:00 PM"]
   },
   {
     "id": 2,
