@@ -5,7 +5,7 @@
     "apellidos": "Sánchez Melián",
     "email": "juanperez@example.com",
     "contraseña": "12345",
-    "foto": "../Resources/libros_apilados.jpg",
+    "foto": "../Resources/icon.png",
     "rol": "profesor",
     "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"],
     "días": ["Lunes", "Miércoles", "Viernes"],
@@ -18,7 +18,7 @@
     "apellidos": "Carreras Delgado",
     "email": "mariagomez@example.com",
     "contraseña": "qwerty",
-    "foto": "../Resources/libros_apilados.jpg",
+    "foto": "../Resources/icon.png",
     "rol": "estudiante",
     "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"]
   },
@@ -28,7 +28,7 @@
     "apellidos": "Rodríguez Pérez",
     "email": "pedrorodriguez@example.com",
     "contraseña": "abcde",
-    "foto": "../Resources/libros_apilados.jpg",
+    "foto": "../Resources/icon.png",
     "rol": "administrador",
     "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"]
   }
