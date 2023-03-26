@@ -4,7 +4,7 @@
     "nombre": "Pablo",
     "apellidos": "Sánchez Melián",
     "email": "juanperez@example.com",
-    "contraseña": "12345",
+    "contraseña": "1234567",
     "foto": "../Resources/icon.png",
     "rol": "profesor",
     "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"],
@@ -17,7 +17,7 @@
     "nombre": "María",
     "apellidos": "Carreras Delgado",
     "email": "mariagomez@example.com",
-    "contraseña": "qwerty",
+    "contraseña": "qwertyu",
     "foto": "../Resources/icon.png",
     "rol": "estudiante",
     "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"]
@@ -27,8 +27,8 @@
     "nombre": "Pedro",
     "apellidos": "Rodríguez Pérez",
     "email": "pedrorodriguez@example.com",
-    "contraseña": "abcde",
-    "foto": "../Resources/icon.png",
+    "contraseña": "abcdefgh",
+    "foto": "../Resources/libros_apilados.jpg",
     "rol": "administrador",
     "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"]
   }
