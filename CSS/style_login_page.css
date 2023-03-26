@@ -1,5 +1,5 @@
 .login_container{
-    background-color: grey;
+    background-color: lightblue;
     width:auto;
     height: 20em;
     margin: 2em;
@@ -32,6 +32,4 @@
     height: 12em;
     width: 17em;
 }
-*{
-    font-family: Serif;
-}
+

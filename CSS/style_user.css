@@ -7,7 +7,7 @@
     grid-gap: 1rem;
     grid-template-columns: 40% 60%;
     grid-template-rows: 100px;
-    background-color: grey;
+    background-color: lightblue;
     grid-template-areas: "image txt";
 
 }
