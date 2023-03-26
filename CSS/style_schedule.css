@@ -1,4 +1,6 @@
 .schedule {
+    height: 20em;
+    width: 80%;
     text-align: center;
     margin: 50px auto;
     border-collapse: collapse;
@@ -10,6 +12,7 @@
     padding: 20px;
     text-align: center;
     font-size: 18px;
+    height: 0.2em;
 }
 
 .schedule_th {
