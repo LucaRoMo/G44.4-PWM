@@ -68,7 +68,13 @@
                             users.forEach((user) => {
                                 const userCard = template.content.cloneNode(true);
                                 console.log(user);
-                                userCard.querySelector('#paragraph-txt-user-card').textContent = user.nombre + ' ' + user.apellidos + ' v';
+                                var imagen = userCard.querySelector('.txt-user-card');
+                                var flecha = document.createElement('img');
+                                flecha.src = "../Resources/down-arrow.png"
+                                imagen.appendChild(flecha);
+
+
+                                userCard.querySelector('#paragraph-txt-user-card').textContent = user.nombre + ' ' + user.apellidos;
                                 userCard.querySelector('.image-user-card img').src = user.foto;
                                 userCard.querySelector('.image-user-card img').alt = user.nombre;
                                 container.appendChild(userCard);
