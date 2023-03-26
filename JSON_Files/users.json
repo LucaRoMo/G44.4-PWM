@@ -4,20 +4,17 @@
     "nombre": "Pablo",
     "apellidos": "Sánchez Melián",
     "email": "juanperez@example.com",
-    "contraseña": "12345",
+    "contraseña": "1234567",
     "foto": "../Resources/libros_apilados.jpg",
     "rol": "profesor",
-    "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"],
-    "días": ["Lunes", "Miércoles", "Viernes"],
-    "hora_inicio": ["15:00 PM", "16:00 PM", "17:00 PM"],
-    "hora_fin": ["16:00 PM", "17:00 PM", "18:00 PM"]
+    "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"]
   },
   {
     "id": 2,
     "nombre": "María",
     "apellidos": "Carreras Delgado",
     "email": "mariagomez@example.com",
-    "contraseña": "qwerty",
+    "contraseña": "qwertyu",
     "foto": "../Resources/libros_apilados.jpg",
     "rol": "estudiante",
     "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"]
@@ -27,7 +24,7 @@
     "nombre": "Pedro",
     "apellidos": "Rodríguez Pérez",
     "email": "pedrorodriguez@example.com",
-    "contraseña": "abcde",
+    "contraseña": "abcdefgh",
     "foto": "../Resources/libros_apilados.jpg",
     "rol": "administrador",
     "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"]
