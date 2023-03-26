@@ -20,4 +20,7 @@
     #user-table{
         display: initial;
     }
+    #user-table th{
+        background-color: skyblue;
+    }
 }

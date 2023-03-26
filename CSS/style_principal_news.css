@@ -18,3 +18,16 @@
     padding-top: 1px;
     text-align: center;
 }
+
+/*Our phone 1em=16px -> 360px=22.5em*/
+@media only screen and (min-width: 361px) {
+    .parrafo {
+        display: none;
+    }
+}
+/*Our tablet 1em=16px -> 1024px=64em*/
+@media only screen and (min-width: 1024px) {
+    .parrafo {
+        display: initial;
+    }
+}

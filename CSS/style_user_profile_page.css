@@ -25,5 +25,8 @@
     grid-area: button2;
     height: 50%;
 }
+*{
+    font-family: Serif;
+}
 
 

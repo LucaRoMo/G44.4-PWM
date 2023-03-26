@@ -16,8 +16,12 @@
 .noticias_secundarias img{
     height: 10em;
     width: 10em;
-}
+    padding-top: 0;
 
+}
+*{
+    font-family: Serif;
+}
 
 
 

@@ -13,13 +13,13 @@
 }
 
 .schedule_th {
-    background-color: gray;
+    background-color: deepskyblue;
     color: white;
     border: 1px solid black;
 }
 
 tr:nth-child(even) {
-    background-color: lightgray;
+    background-color: lightsteelblue;
 }
 
 .schedule_td {
@@ -27,6 +27,6 @@ tr:nth-child(even) {
 }
 
 .schedule_td:first-child {
-    background-color: gray;
+    background-color: lightsteelblue;
     color: white;
 }
