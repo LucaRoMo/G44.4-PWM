@@ -31,11 +31,29 @@
     <script>
         function init() {
             module_loader("../HTML_Modules/header.html", "header_login_page");
-            module_loader("../HTML_Modules/name_field.html", "login_user_name");
+            //module_loader("../HTML_Modules/name_field.html", "login_user_name");
             module_loader("../HTML_Modules/password_field.html", "login_pass_user");
             module_loader("../HTML_Modules/checkBox.html", "login_pass_remember");
             module_loader("../HTML_Modules/footer.html", "footer_login_page");
 
+            //Cargar el name field dinamicamente
+            fetch("../HTML_Modules/name_field.html").then((file) => {
+                return file.text()
+            }).then((text) => {
+                document.getElementById('login_user_name').innerHTML = text;
+
+                const container = document.getElementById('login_user_name');
+
+                const template = document.querySelector(".field_text_label");
+
+                const field = template.content.cloneNode(true);
+                var label = field.querySelector('.label');
+                var bold = document.createElement('b');
+                bold.textContent = "Nombre";
+                label.appendChild(bold);
+                field.querySelector('.text_Field').placeholder = "Nombre";
+                container.appendChild(field);
+            })
         }
         document.addEventListener('DOMContentLoaded', init);
 
