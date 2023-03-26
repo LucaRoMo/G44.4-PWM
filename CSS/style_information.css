@@ -1,6 +1,6 @@
 .container-information-card {
     height: 15em;
-    width: 60em;
+    width: 100%;
     padding-right: 0.5em;
     border: 1px black solid;
     display: grid;
@@ -27,10 +27,10 @@
 }
 
 .image-information-card img{
-    height: 150px;
-    width: 150px;
+    height: 10em;
+    width: 10em;
     max-width: 100%;
-    position: static;
+
 }
 
 .hidden-txt-information-card img {
