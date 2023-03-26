@@ -42,6 +42,25 @@
         module_loader("../HTML_Modules/icon_text.html", "contact_page_icon_text_2");
         module_loader("../HTML_Modules/icon_text.html", "contact_page_icon_text_3");
         module_loader("../HTML_Modules/footer.html", "footer_contact_page");
+        /*fetch("../HTML_Modules/icon_text.html")
+            .then((file)=>{
+                return file.text()
+            }).then((text)=>{
+            document.getElementsByClassName("containerBorder").innerHTML = text;
+            const contenedor = document.querySelector("containerBorder");
+            fetch("../JSON/contact.json")
+                .then((file)=>file.json())
+                .then((info)=>{
+                    info.forEach((information) =>{
+                        const card = contenedor.content.cloneNode(true);
+                        card.querySelector("#icon_text_image").src = information.foto;
+                        card.querySelector("#icon_text_image").alt = information.foto;
+                        card.querySelector("#icon_text_p").textContent = information.texto;
+                        contenedor.appendChild(card);
+                    })
+                })
+        })
+        */
 
         //Cargamos
         fetch("../HTML_Modules/name_field.html")
