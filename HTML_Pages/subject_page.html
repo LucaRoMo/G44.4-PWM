@@ -10,8 +10,9 @@
 <body>
     <header id="header-subject-page"></header>
     <div id="subject_page_menu">
-    <h1 class="subject_name">Nombre de asignatura</h1>
+    <h1 class="subject_name"></h1>
         <div id="subject_page_button_group"></div>
+        <div class="group_documents"></div>
         <div id="subject_page_elongated_card1"></div>
         <div id="subject_page_elongated_card2"></div>
         <div id="subject_page_elongated_card3"></div>
@@ -27,12 +28,42 @@
             name_and_module_loader("../HTML_Modules/group_element.html","subject_page_button_group", "group_element_text", "Tema 1")
 
 
-            module_loader("../HTML_Modules/elongated_card.html", "subject_page_elongated_card1");
+            /*module_loader("../HTML_Modules/elongated_card.html", "subject_page_elongated_card1");
             module_loader("../HTML_Modules/elongated_card.html", "subject_page_elongated_card2");
             module_loader("../HTML_Modules/elongated_card.html", "subject_page_elongated_card3");
             module_loader("../HTML_Modules/elongated_card.html", "subject_page_elongated_card4");
-
+            */
             module_loader("../HTML_Modules/footer.html", "footer-subject-page");
+
+            //Nombre de la asignatura
+            fetch("../JSON_Files/subjects.json").then((file) => file.json()).
+            then((subjects) => {
+                const subject = subjects.find(s => s.id === 1)
+                document.querySelector('.subject_name').textContent = subject.nombre;
+
+            })
+
+            fetch("../HTML_Modules/template_elongated_card.html")
+                .then((file) => {
+                    return file.text()
+                }).then((text) => {
+                    document.querySelector('.group_documents').innerHTML = text;
+
+                    const container = document.querySelector('.group_documents');
+
+                    const template = document.querySelector('.template_elongated_card');
+
+                    fetch("../JSON_Files/documents.json").then((file) => file.json())
+                        .then((documents) => {
+                            documents.forEach((documento) => {
+                                const card = template.content.cloneNode(true);
+                                card.querySelector('.template_elongated_card_text').textContent = documento.nombre;
+                                card.querySelector(".template_elongated_card_image").src = documento.foto;
+                                card.querySelector(".template_elongated_card_image").alt = documento.nombre;
+                                container.appendChild(card);
+                            })
+                        })
+            })
         }
         document.addEventListener('DOMContentLoaded', init);
     </script>
