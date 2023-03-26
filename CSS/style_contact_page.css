@@ -10,15 +10,16 @@
 }
 .contact_page_group_of_name_field{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 20em 1fr;
     grid-gap: 1em;
     grid-template-rows: repeat(4,1fr) 20em ;
+    padding-right: 2em;
     grid-template-areas:
-    ". name1 ."
-    ". name2 ."
-    ". name3 ."
-    ". name4 ."
-    ". text-area .";
+    ". name1"
+    ". name2"
+    ". name3"
+    ". name4"
+    ". text-area";
 }
 
 .contact_page_info_text{
