@@ -7,7 +7,7 @@
     "contraseña": "1234567",
     "foto": "../Resources/icon.png",
     "rol": "profesor",
-    "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"],
+    "asignaturas": ["Matemáticas 1", "Matemáticas 2", "Lengua"]
   },
   {
     "id": 2,
