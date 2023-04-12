@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { InformationCardComponent } from './information-card/information-card.component';
 import { EmailFieldComponent } from './email-field/email-field.component';
 import { HeaderComponent } from './header/header.component';
+import { ButtonComponent } from './button/button.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { HeaderComponent } from './header/header.component';
     InformationCardComponent,
     EmailFieldComponent,
     HeaderComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,
