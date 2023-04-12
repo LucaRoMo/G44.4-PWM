@@ -1,0 +1,64 @@
+.container-information-card {
+  height: 15em;
+  width: 100%;
+  padding-right: 0.5em;
+  border: 1px black solid;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 15em 1fr;
+  grid-template-rows: 200px;
+  background-color: grey;
+  grid-template-areas: "image txt";
+
+}
+
+.txt-information-card, .image-information-card {
+  display: grid;
+  align-self: center;
+  justify-content: center;
+}
+
+.image-information-card {
+  grid-area: image;
+}
+
+.txt-information-card {
+  grid-area: txt;
+}
+
+.image-information-card img{
+  height: 10em;
+  width: 10em;
+  max-width: 100%;
+
+}
+
+.hidden-txt-information-card img {
+  height: 2vw;
+  width: 2vw;
+}
+
+.hidden-txt-information-card{
+  font-size: 5vw;
+}
+
+/*Our phone 1em=16px -> 360px=22.5em*/
+@media only screen and (min-width: 361px) {
+  .hidden-txt-information-card {
+    display: initial;
+  }
+  .visible-txt-information-card {
+    display: none;
+  }
+}
+/*Our tablet 1em=16px -> 1024px=64em*/
+@media only screen and (min-width: 1024px) {
+  .hidden-txt-information-card {
+    display: none;
+  }
+  .visible-txt-information-card {
+    display: initial;
+  }
+}
+
+
