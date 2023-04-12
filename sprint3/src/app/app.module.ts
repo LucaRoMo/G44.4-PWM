@@ -5,12 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { InformationCardComponent } from './information-card/information-card.component';
+import { EmailFieldComponent } from './email-field/email-field.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    InformationCardComponent
+    InformationCardComponent,
+    EmailFieldComponent,
   ],
   imports: [
     BrowserModule,
