@@ -1,0 +1,14 @@
+.button_element_container{
+  background-color: deepskyblue;
+  border: 0.1em solid black;
+  border-radius: 0.8em;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.button_element_text{
+  text-align: center;
+  width: 8em;
+  margin: auto;
+
+}
