@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { InformationCardComponent } from './information-card/information-card.component';
 import { EmailFieldComponent } from './email-field/email-field.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { EmailFieldComponent } from './email-field/email-field.component';
     FooterComponent,
     InformationCardComponent,
     EmailFieldComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
