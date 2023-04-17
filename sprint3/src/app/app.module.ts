@@ -8,8 +8,7 @@ import { InformationCardComponent } from './information-card/information-card.co
 import { EmailFieldComponent } from './email-field/email-field.component';
 import { HeaderComponent } from './header/header.component';
 import { ButtonComponent } from './button/button.component';
-import { ChatComponent } from './chat/chat.component';
-import { MessageComponent } from './message/message.component';
+import { VerticalCardComponent } from './vertical-card/vertical-card.component';
 
 
 @NgModule({
@@ -20,8 +19,7 @@ import { MessageComponent } from './message/message.component';
     EmailFieldComponent,
     HeaderComponent,
     ButtonComponent,
-    ChatComponent,
-    MessageComponent,
+    VerticalCardComponent,
   ],
   imports: [
     BrowserModule,
