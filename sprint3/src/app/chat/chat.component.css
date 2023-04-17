@@ -1,0 +1,75 @@
+.chat_container{
+  background-color: black;
+  /*display: flex;
+  flex-direction: column;*/
+  height: 25em;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.chat_thisuser_message1, .chat_thisuser_message2{
+  align-self: end;
+  background-color: lightgray;
+  border-radius: 10px 10px 0 10px;
+  max-width: 60%;
+  margin-right: 0.1em;
+}
+.chat_message_container{
+  margin: 0.05em;
+}
+.chat_otheruser_message1, .chat_otheruser_message2{
+  background-color: azure;
+  /*margin-right: auto;*/
+  max-width: 60%;
+  border-radius: 10px 10px 10px 0;
+  /* padding-left: 0.2em;*/
+  align-self: start;
+}
+.chat_messages_list{
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat_input_container{
+  width: 98%;
+  height: 4em;
+}
+.chat_message_space{
+  width: 83%;
+  height: 100%;
+}
+.chat_send_button{
+  width: 14%;
+  height: 100%;
+}
+body {
+  scrollbar-width: none; /* para Firefox */
+  -ms-overflow-style: none; /* para IE y Edge */
+}
+
+/* Añadir un scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Personalizar el track del scrollbar */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Personalizar el thumb del scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+/* Personalizar el thumb del scrollbar cuando se está desplazando */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+.chat_thisuser_message, .chat_thisuser_message1, .chat_thisuser_message2, .chat_otheruser_message1, .chat_otheruser_message2{
+  padding: 0.3em;
+  text-align: left;
+}
