@@ -1,18 +1,17 @@
 .chat_container{
   background-color: black;
-  /*display: flex;
-  flex-direction: column;*/
+  display: flex;
+  flex-direction: column;
   height: 25em;
   max-width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
+
 }
 .chat_thisuser_message1, .chat_thisuser_message2{
   align-self: end;
   background-color: lightgray;
   border-radius: 10px 10px 0 10px;
   max-width: 60%;
-  margin-right: 0.1em;
+  margin-right: 0em;
 }
 .chat_message_container{
   margin: 0.05em;
@@ -22,21 +21,29 @@
   /*margin-right: auto;*/
   max-width: 60%;
   border-radius: 10px 10px 10px 0;
-  /* padding-left: 0.2em;*/
+  padding-left: 0;
+  margin-left: 0;
   align-self: start;
 }
 .chat_messages_list{
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .chat_input_container{
+  margin-top: 0;
   width: 98%;
-  height: 4em;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .chat_message_space{
-  width: 83%;
+  margin-top: 0;
+  width: 86%;
   height: 100%;
 }
 .chat_send_button{
