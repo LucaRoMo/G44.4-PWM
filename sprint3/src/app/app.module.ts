@@ -8,6 +8,7 @@ import { InformationCardComponent } from './information-card/information-card.co
 import { EmailFieldComponent } from './email-field/email-field.component';
 import { HeaderComponent } from './header/header.component';
 import { ButtonComponent } from './button/button.component';
+import { VerticalCardComponent } from './vertical-card/vertical-card.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { ButtonComponent } from './button/button.component';
     EmailFieldComponent,
     HeaderComponent,
     ButtonComponent,
+    VerticalCardComponent,
   ],
   imports: [
     BrowserModule,
