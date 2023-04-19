@@ -1,9 +1,0 @@
-/*Para el userName*/
-.name_field_txt_field{
-    display: inline-block;
-    float: right;
-}
-
-.name_field_txt_field input:valid {
-    border: 1px solid green;
-}
