@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  burgerClosed() {
+  burgerClosed: boolean = true;
 
+  ChangeBurger() {
+    this.burgerClosed = !this.burgerClosed;
   }
 }
