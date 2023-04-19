@@ -12,6 +12,9 @@ import { VerticalCardComponent } from './vertical-card/vertical-card.component';
 import {MessageComponent} from "./message/message.component";
 import {ChatComponent} from "./chat/chat.component";
 import { ButtonGroupComponent } from './button-group/button-group.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { ContactIconTextComponent } from './contact-icon-text/contact-icon-text.component';
+import { NameFieldComponent } from './name-field/name-field.component';
 
 
 @NgModule({
@@ -26,6 +29,9 @@ import { ButtonGroupComponent } from './button-group/button-group.component';
     MessageComponent,
     ChatComponent,
     ButtonGroupComponent,
+    ContactPageComponent,
+    ContactIconTextComponent,
+    NameFieldComponent,
   ],
   imports: [
     BrowserModule,
