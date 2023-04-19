@@ -7,7 +7,7 @@
   grid-template-areas:
         "texto"
         "imagenes";
-  position: absolute;
+  position: initial;
   bottom: 0;
   left: 0;
   width: 100%;
