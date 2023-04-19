@@ -15,10 +15,23 @@
       <li><a href="#">Schedule</a></li>
     </ul>
   </div>
-  <div class="menu-burger">
+  <div class="menu-burger" (click)="ChangeBurger()">
 
-    <img src="../../assets/burger-close.png" alt="menu-opened">
+    <div class="header_navbar_small" *ngIf="burgerClosed">
+      <img src="../../assets/burger-close.png" alt="menu-closed">
+
+    </div>
+    <div  *ngIf="!burgerClosed">
+      <img src="../../assets/closed_icon.png" alt="menu-opened">
+      <ul>
+        <li><a href="../information-page/information-page.component.html">Información</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Schedule</a></li>
+      </ul>
+    </div>
+
   </div>
+
   <div class="header_academy_user"><a href="#">
     <img id="iconHeader" src="../../assets/icon.png" alt="iniciar sesion"></a></div>
 </header>
