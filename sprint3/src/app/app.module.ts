@@ -11,7 +11,7 @@ import { ButtonComponent } from './button/button.component';
 import { VerticalCardComponent } from './vertical-card/vertical-card.component';
 import {MessageComponent} from "./message/message.component";
 import {ChatComponent} from "./chat/chat.component";
-import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
+import { ButtonGroupComponent } from './button-group/button-group.component';
 
 
 @NgModule({
@@ -25,7 +25,7 @@ import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
     VerticalCardComponent,
     MessageComponent,
     ChatComponent,
-    BurgerMenuComponent,
+    ButtonGroupComponent,
   ],
   imports: [
     BrowserModule,
