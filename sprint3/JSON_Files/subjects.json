@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "nombre": "Matemáticas 1",
+    "curso": 1,
+    "max_estudiantes": 20,
+    "id_estudiantes": [2],
+    "id_profesor": 1,
+    "foto": "../Resources/libros_apilados.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Matemáticas 2",
+    "curso": 2,
+    "max_estudiantes": 20,
+    "id_estudiantes": [2],
+    "id_profesor": 1,
+    "foto": "../Resources/libros_apilados.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Lengua 1",
+    "curso": 1,
+    "max_estudiantes": 20,
+    "id_estudiantes": [2],
+    "id_profesor": 1,
+    "foto": "../Resources/libros_apilados.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Química 1",
+    "curso": 1,
+    "max_estudiantes": 20,
+    "id_estudiantes": [2,4],
+    "id_profesor": 1,
+    "foto": "../Resources/libros_apilados.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Química 2",
+    "curso": 2,
+    "max_estudiantes": 20,
+    "id_estudiantes": [2],
+    "id_profesor": 1,
+    "foto": "../Resources/libros_apilados.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Lengua 2",
+    "curso": 2,
+    "max_estudiantes": 20,
+    "id_estudiantes": [2,4],
+    "id_profesor": 1,
+    "foto": "../Resources/libros_apilados.jpg"
+  }
+]

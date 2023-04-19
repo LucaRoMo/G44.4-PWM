@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "Noticia 1",
+    "descripcion": "Esto ha pasado en la academia. ¡Increíble!",
+    "foto": "../Resources/libros_apilados.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Noticia 2",
+    "descripcion": "Esto ha pasado en la academia. ¡Qué mal!",
+    "foto": "../Resources/libros_apilados.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Noticia 3",
+    "descripcion": "Esto ha pasado en la academia y todo salió bien. ¡Increíble!",
+    "foto": "../Resources/libros_apilados.jpg"
+  }
+]

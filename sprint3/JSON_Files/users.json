@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nombre": "Pablo",
+    "apellidos": "Sánchez Melián",
+    "email": "juanperez@example.com",
+    "contraseña": "1234567",
+    "foto": "../Resources/icon.png",
+    "rol": "profesor",
+    "asignaturas": [1,2,3,4,5,6]
+  },
+  {
+    "id": 2,
+    "nombre": "María",
+    "apellidos": "Gómez Delgado",
+    "email": "mariagomez@example.com",
+    "contraseña": "qwertyu",
+    "foto": "../Resources/icon.png",
+    "rol": "estudiante",
+    "asignaturas": [1,2,3,4,5,6]
+  },
+  {
+    "id": 3,
+    "nombre": "Pedro",
+    "apellidos": "Rodríguez Pérez",
+    "email": "pedrorodriguez@example.com",
+    "contraseña": "abcdefgh",
+    "foto": "../Resources/libros_apilados.jpg",
+    "rol": "administrador",
+    "asignaturas": [1,2,3,4,5,6]
+  },
+  {
+    "id": 4,
+    "nombre": "José",
+    "apellidos": "Hernández Hidalgo",
+    "email": "josehernan@example.com",
+    "contraseña": "qwertyu",
+    "foto": "../Resources/icon.png",
+    "rol": "estudiante",
+    "asignaturas": [4,6]
+  }
+]
