@@ -143,5 +143,14 @@ body {
   .menu-burger img{
     height: 2em;
     width: 2em;
+    justify-content: center;
+  }
+  .menu-burger-closed ul{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+
   }
 }
