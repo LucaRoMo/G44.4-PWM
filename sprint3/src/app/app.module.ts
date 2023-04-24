@@ -16,6 +16,11 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ContactIconTextComponent } from './contact-icon-text/contact-icon-text.component';
 import { NameFieldComponent } from './name-field/name-field.component';
 
+import { HorizontalCardComponent } from './horizontal-card/horizontal-card.component';
+import { ChatPageComponent } from './chat-page/chat-page.component';
+import { UserCardComponent } from './user-card/user-card.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { NoticiasPrincipalComponent } from './noticias-principal/noticias-principal.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +37,11 @@ import { NameFieldComponent } from './name-field/name-field.component';
     ContactPageComponent,
     ContactIconTextComponent,
     NameFieldComponent,
+    HorizontalCardComponent,
+    ChatPageComponent,
+    UserCardComponent,
+    HomePageComponent,
+    NoticiasPrincipalComponent,
   ],
   imports: [
     BrowserModule,
