@@ -61,9 +61,11 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
-  .burguer{
+
+  .menu-burger{
     display: none;
   }
+
 }
 @media only screen and (max-width: 800px) {
   .website_header {
@@ -125,7 +127,7 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
-  .burger {
+  /*.burger {
     cursor: pointer;
     display: flex;
     margin: auto;
@@ -133,5 +135,22 @@ body {
     justify-content: space-between;
     width: 3em;
     height: 2em;
+  }*/
+  .menu-burger{
+    cursor: pointer;
+    margin: auto;
+  }
+  .menu-burger img{
+    height: 2em;
+    width: 2em;
+    justify-content: center;
+  }
+  .menu-burger-closed ul{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+
   }
 }

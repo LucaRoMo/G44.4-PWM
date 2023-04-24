@@ -10,16 +10,28 @@
   </div>
   <div class="header_navbar">
     <ul>
-      <li><a href="#">Información</a></li>
+      <li><a href="../information-page/information-page.component.html">Información</a></li>
       <li><a href="#">Contacto</a></li>
       <li><a href="#">Schedule</a></li>
     </ul>
   </div>
-  <div class="burger">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
+  <div class="menu-burger" (click)="ChangeBurger()">
+
+    <div class="header_navbar_small" *ngIf="burgerClosed">
+      <img src="../../assets/burger-close.png" alt="menu-closed">
+
+    </div>
+    <div class ="menu-burger-closed" *ngIf="!burgerClosed">
+      <img src="../../assets/closed_icon.png" alt="menu-opened">
+      <ul>
+        <li><a href="../information-page/information-page.component.html">Información</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Schedule</a></li>
+      </ul>
+    </div>
+
   </div>
+
   <div class="header_academy_user"><a href="#">
     <img id="iconHeader" src="../../assets/icon.png" alt="iniciar sesion"></a></div>
 </header>

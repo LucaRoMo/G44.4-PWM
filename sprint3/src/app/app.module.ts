@@ -11,6 +11,11 @@ import { ButtonComponent } from './button/button.component';
 import { VerticalCardComponent } from './vertical-card/vertical-card.component';
 import {MessageComponent} from "./message/message.component";
 import {ChatComponent} from "./chat/chat.component";
+import { ButtonGroupComponent } from './button-group/button-group.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { ContactIconTextComponent } from './contact-icon-text/contact-icon-text.component';
+import { NameFieldComponent } from './name-field/name-field.component';
+
 import { HorizontalCardComponent } from './horizontal-card/horizontal-card.component';
 import { ChatPageComponent } from './chat-page/chat-page.component';
 import { UserCardComponent } from './user-card/user-card.component';
@@ -28,6 +33,10 @@ import { NoticiasPrincipalComponent } from './noticias-principal/noticias-princi
     VerticalCardComponent,
     MessageComponent,
     ChatComponent,
+    ButtonGroupComponent,
+    ContactPageComponent,
+    ContactIconTextComponent,
+    NameFieldComponent,
     HorizontalCardComponent,
     ChatPageComponent,
     UserCardComponent,

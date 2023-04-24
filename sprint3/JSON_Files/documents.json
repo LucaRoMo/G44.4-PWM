@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "foto": "../Resources/PDF_file_icon.png",
+    "nombre": "Documento 1"
+  },
+  {
+    "id": 2,
+    "foto": "../Resources/PDF_file_icon.png",
+    "nombre": "Documento 2"
+  },
+  {
+    "id": 3,
+    "foto": "../Resources/PDF_file_icon.png",
+    "nombre": "Documento 3"
+  },
+  {
+    "id": 4,
+    "foto": "../Resources/PDF_file_icon.png",
+    "nombre": "Documento 4"
+  }
+]

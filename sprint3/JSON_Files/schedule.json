@@ -1,0 +1,132 @@
+{
+  "lunes": [
+    {
+      "hora": "15:00 - 16:00",
+      "actividad": "Matemáticas 1"
+    },
+    {
+      "hora": "16:00 - 17:00",
+      "actividad": "Matemáticas 2"
+    },
+    {
+      "hora": "17:00 - 18:00",
+      "actividad": "Lengua 1"
+    },
+    {
+      "hora": "18:00 - 19:00",
+      "actividad": "Lengua 2"
+    },
+    {
+      "hora": "19:00 - 20:00",
+      "actividad": "Lengua 4"
+    },
+    {
+      "hora": "20:00 - 21:00",
+      "actividad": "Lengua 3"
+    }
+  ],
+  "martes": [
+    {
+      "hora": "15:00 - 16:00",
+      "actividad": "Matemáticas 3"
+    },
+    {
+      "hora": "16:00 - 17:00",
+      "actividad": "Matemáticas 2"
+    },
+    {
+      "hora": "17:00 - 18:00",
+      "actividad": "Lengua 1"
+    },
+    {
+      "hora": "18:00 - 19:00",
+      "actividad": "Lengua 2"
+    },
+    {
+      "hora": "19:00 - 20:00",
+      "actividad": "Lengua 4"
+    },
+    {
+      "hora": "20:00 - 21:00",
+      "actividad": "Lengua 3"
+    }
+  ],
+  "miercoles": [
+    {
+      "hora": "15:00 - 16:00",
+      "actividad": "Matemáticas 1"
+    },
+    {
+      "hora": "16:00 - 17:00",
+      "actividad": "Matemáticas 2"
+    },
+    {
+      "hora": "17:00 - 18:00",
+      "actividad": "Lengua 1"
+    },
+    {
+      "hora": "18:00 - 19:00",
+      "actividad": "Lengua 2"
+    },
+    {
+      "hora": "19:00 - 20:00",
+      "actividad": "Lengua 4"
+    },
+    {
+      "hora": "20:00 - 21:00",
+      "actividad": "Lengua 3"
+    }
+  ],
+  "jueves": [
+    {
+      "hora": "15:00 - 16:00",
+      "actividad": "Matemáticas 1"
+    },
+    {
+      "hora": "16:00 - 17:00",
+      "actividad": "Química 2"
+    },
+    {
+      "hora": "17:00 - 18:00",
+      "actividad": "Lengua 1"
+    },
+    {
+      "hora": "18:00 - 19:00",
+      "actividad": "Lengua 2"
+    },
+    {
+      "hora": "19:00 - 20:00",
+      "actividad": "Química 4"
+    },
+    {
+      "hora": "20:00 - 21:00",
+      "actividad": "Lengua 3"
+    }
+  ],
+  "viernes": [
+    {
+      "hora": "15:00 - 16:00",
+      "actividad": "Química 1"
+    },
+    {
+      "hora": "16:00 - 17:00",
+      "actividad": "Matemáticas 2"
+    },
+    {
+      "hora": "17:00 - 18:00",
+      "actividad": "Lengua 1"
+    },
+    {
+      "hora": "18:00 - 19:00",
+      "actividad": "Lengua 2"
+    },
+    {
+      "hora": "19:00 - 20:00",
+      "actividad": "Lengua 4"
+    },
+    {
+      "hora": "20:00 - 21:00",
+      "actividad": "Química 3"
+    }
+  ]
+}
