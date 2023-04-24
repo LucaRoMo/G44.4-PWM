@@ -11,7 +11,11 @@ import { ButtonComponent } from './button/button.component';
 import { VerticalCardComponent } from './vertical-card/vertical-card.component';
 import {MessageComponent} from "./message/message.component";
 import {ChatComponent} from "./chat/chat.component";
-
+import { HorizontalCardComponent } from './horizontal-card/horizontal-card.component';
+import { ChatPageComponent } from './chat-page/chat-page.component';
+import { UserCardComponent } from './user-card/user-card.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { NoticiasPrincipalComponent } from './noticias-principal/noticias-principal.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +28,11 @@ import {ChatComponent} from "./chat/chat.component";
     VerticalCardComponent,
     MessageComponent,
     ChatComponent,
+    HorizontalCardComponent,
+    ChatPageComponent,
+    UserCardComponent,
+    HomePageComponent,
+    NoticiasPrincipalComponent,
   ],
   imports: [
     BrowserModule,
