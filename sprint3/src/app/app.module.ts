@@ -21,6 +21,7 @@ import { ChatPageComponent } from './chat-page/chat-page.component';
 import { UserCardComponent } from './user-card/user-card.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NoticiasPrincipalComponent } from './noticias-principal/noticias-principal.component';
+import { MiAcademiaComponent } from './mi-academia/mi-academia.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { NoticiasPrincipalComponent } from './noticias-principal/noticias-princi
     UserCardComponent,
     HomePageComponent,
     NoticiasPrincipalComponent,
+    MiAcademiaComponent,
   ],
   imports: [
     BrowserModule,
