@@ -4,6 +4,7 @@
   height: 25em;
   background-color: linen;
   max-width: 100%;
+  margin: 2em;
 
 }
 .chat_thisuser_message1, .chat_thisuser_message2{
@@ -11,7 +12,7 @@
   background-color: lightgray;
   border-radius: 10px 10px 0 10px;
   max-width: 60%;
-  margin-right: 0em;
+  margin-right: 0;
 }
 .chat_message_container{
   margin: 0.05em;
