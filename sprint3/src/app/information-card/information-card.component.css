@@ -1,21 +1,9 @@
 .container-information-card {
-  height: 15em;
+  height: auto;
   width: 100%;
   padding-right: 0.5em;
   border: 1px black solid;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 15em 1fr;
-  grid-template-rows: 200px;
-  background-color: grey;
-  grid-template-areas: "image txt";
-
-}
-
-.txt-information-card, .image-information-card {
-  display: grid;
-  align-self: center;
-  justify-content: center;
+  background-color: lightblue;
 }
 
 .image-information-card {
@@ -30,34 +18,51 @@
   height: 10em;
   width: 10em;
   max-width: 100%;
+  min-width: 150px;
+  align-self: flex-start;
 
 }
 
-.hidden-txt-information-card img {
+.tittle img {
   height: 2vw;
   width: 2vw;
+  align-self: center;
 }
 
-.hidden-txt-information-card{
+.tittle{
   font-size: 5vw;
+  background-color: lightblue;
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding-right: 0;
+  align-self: center;
 }
-
+.visible-txt-information-card {
+  padding: 0.3em;
+}
 /*Our phone 1em=16px -> 360px=22.5em*/
-@media only screen and (min-width: 361px) {
-  .hidden-txt-information-card {
-    display: initial;
+@media only screen and (max-width: 1023px) {
+  .container-information-card{
+    display: flex;
+    flex-direction: column;
   }
-  .visible-txt-information-card {
-    display: none;
+  .tittle-and-image{
+    display: flex;
+    flex-direction: row;
   }
 }
 /*Our tablet 1em=16px -> 1024px=64em*/
 @media only screen and (min-width: 1024px) {
-  .hidden-txt-information-card {
+  .tittle {
     display: none;
   }
-  .visible-txt-information-card {
-    display: initial;
+  .container-information-card{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 15em 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "image txt";
   }
 }
 
