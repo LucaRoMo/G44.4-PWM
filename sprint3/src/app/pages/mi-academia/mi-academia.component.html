@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MiPerfil</title>
+  <link rel="stylesheet" href="mi-academia.component.css">
+</head>
+
+<body>
+  <header id="header_user_profile"></header>
+  <div id="user_profile_name_card"><!--Nombre del perfil -->
+    <app-horizontal-card></app-horizontal-card>
+  </div>
+  <div class="user_profile_container">
+    <div id="user_profile_button_group">
+
+    </div>
+    <div id="user_profile_container_cards" >
+      <!-- Aqui quiero poner los cards -->
+      <div class="subject_card_miAcademia" *ngFor="let asignatura of asignaturas">
+        <!--{{asignatura.id}}-->
+      </div>
+
+    </div>
+    <div id="user_profile_button1"></div>
+  </div>
+
+  <footer id="footer_user_profile"></footer>
+</body>

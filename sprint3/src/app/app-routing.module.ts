@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {MiAcademiaComponent} from "./mi-academia/mi-academia.component";
+import {MiAcademiaComponent} from "./pages/mi-academia/mi-academia.component";
 
 const routes: Routes = [
   {path:'miAcademia',component: MiAcademiaComponent}
