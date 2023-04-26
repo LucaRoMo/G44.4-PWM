@@ -1,0 +1,57 @@
+.container-user-card {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  background: skyblue;
+}
+
+.image-user-card{
+  margin: 1em;
+}
+
+.image-user-card img {
+  height: 4em;
+  width: 4em;
+  max-width: 100%;
+}
+.txt-user-card {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.informacion-adicional {
+  background: skyblue;
+  border: 1px solid skyblue;
+  cursor: pointer;
+}
+
+.informacion-adicional2 img{
+  height: 2em;
+  width: 2em;
+}
+
+.informacion-adicional2:active {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+.paragraph-txt-user-card {
+  font-size: 2em;
+  align-self: center;
+}
+
+#prueba_flecha {
+  height: 1.5em;
+  width: 2em;
+  align-content: center;
+  align-self: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+#flechita {
+  height: 2em;
+  width: 2em;
+}

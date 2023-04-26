@@ -2,15 +2,18 @@
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
-  grid-template-rows: 3.5em 1.5em;
-  background-color: skyblue;
+  grid-template-rows: 1fr 1.5em;
   grid-template-areas:
         "texto"
         "imagenes";
-  position: initial;
+  background-color: skyblue;
+  overflow: visible;
+  width: 100%;
+
+  position: absolute;
+  clear: both;
   bottom: 0;
   left: 0;
-  width: 100%;
 }
 
 .footer-txt{
