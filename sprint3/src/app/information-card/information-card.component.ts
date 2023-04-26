@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class InformationCardComponent {
 
+  abierto:boolean=false
+  abrirInformationCard() {
+    this.abierto=!this.abierto
+  }
 }
