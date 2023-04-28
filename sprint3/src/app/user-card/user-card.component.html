@@ -1,18 +1,14 @@
 <link rel="stylesheet" href="../user-card/user-card.component.css">
-<div class="container-user-card">
-  <div class="image-user-card">
-    <img id="imagencita" src="../../assets/wireframe-image.png" alt="imagen de información">
-  </div>
-  <div class="contenedor-nombre">
-    <button (click)="mostrarInformacion()" class="informacion-adicional">
-      <div class="txt-user-card">
-        <p id="paragraph-txt-user-card" class="paragraph-txt-user-card">Nombre y apellidos</p>
-        <a id="prueba_flecha"><img id="flechita" src="../../assets/down-arrow.png" alt=""></a>
-      </div>
-    </button>
-  </div>
-  <div *ngIf="informacion" class="informacion-adicional2">
-    <p>Rol:</p>
-    <p>Lista de asignaturas:</p>
-  </div>
+
+<div class="dropdown">
+  <button class="boton-dropdown" (click)="mostrarInformacion();cambiarImagen()">
+    <img src="../../assets/icon.png" alt="Foto de perfil">
+    Nombre y Apellidos
+    <img [src]="imageUrl" alt="Flecha">
+  </button>
+  <ul *ngIf="informacion">
+    <li><a href="#">Opción 1</a></li>
+    <li><a href="#">Opción 2</a></li>
+    <li><a href="#">Asignaturas:</a></li>
+  </ul>
 </div>

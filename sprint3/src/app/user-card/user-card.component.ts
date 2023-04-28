@@ -7,9 +7,17 @@ import {Component} from '@angular/core';
 })
 export class UserCardComponent {
   informacion: boolean = false;
-
+  imageUrl = "../../assets/down-arrow2.png";
   mostrarInformacion() {
     this.informacion = !this.informacion;
     console.log(this.informacion)
+  }
+
+  cambiarImagen(){
+    if (this.imageUrl === "../../assets/down-arrow.png"){
+      this.imageUrl = "../../assets/down-arrow2.png";
+    } else {
+      this.imageUrl = "../../assets/down-arrow.png";
+    }
   }
 }

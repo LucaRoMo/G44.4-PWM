@@ -21,6 +21,8 @@ import { ChatPageComponent } from './chat-page/chat-page.component';
 import { UserCardComponent } from './user-card/user-card.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NoticiasPrincipalComponent } from './noticias-principal/noticias-principal.component';
+import { UserListPageComponent } from './user-list-page/user-list-page.component';
+import {UserListComponent} from "./user-list/user-list.component";
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { NoticiasPrincipalComponent } from './noticias-principal/noticias-princi
     UserCardComponent,
     HomePageComponent,
     NoticiasPrincipalComponent,
+    UserListPageComponent,
+    UserListComponent,
   ],
   imports: [
     BrowserModule,
