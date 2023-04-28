@@ -84,6 +84,7 @@ body {
   .header_academy_name {
     align-self: center;
     margin: auto;
+    font-size: small;
   }
 
   .header_navbar {
