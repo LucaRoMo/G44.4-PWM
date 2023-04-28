@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,7 +21,6 @@ import { ChatPageComponent } from './chat-page/chat-page.component';
 import { UserCardComponent } from './user-card/user-card.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NoticiasPrincipalComponent } from './noticias-principal/noticias-principal.component';
-import { MiAcademiaComponent } from './pages/mi-academia/mi-academia.component';
 
 @NgModule({
   declarations: [
@@ -44,12 +42,10 @@ import { MiAcademiaComponent } from './pages/mi-academia/mi-academia.component';
     UserCardComponent,
     HomePageComponent,
     NoticiasPrincipalComponent,
-    MiAcademiaComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
