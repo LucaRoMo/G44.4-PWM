@@ -9,8 +9,8 @@ body {
   .website_header {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(2, 1fr) 450px 1fr;
-    grid-template-rows: 100px;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: auto;
     background-color: skyblue;
     grid-template-areas: "logo name navbar icon";
   }
