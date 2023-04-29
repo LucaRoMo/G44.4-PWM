@@ -27,8 +27,6 @@ import { LogInPageComponent } from './log-in-page/log-in-page.component';
 import { PasswordFieldComponent } from './password-field/password-field.component';
 import { CheckboxFieldComponent } from './checkbox-field/checkbox-field.component';
 import { LogInComponent } from './log-in/log-in.component';
-import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
-
 
 @NgModule({
   declarations: [
@@ -56,7 +54,6 @@ import { ImageCarouselComponent } from './image-carousel/image-carousel.componen
     PasswordFieldComponent,
     CheckboxFieldComponent,
     LogInComponent,
-    ImageCarouselComponent,
   ],
   imports: [
     BrowserModule,
