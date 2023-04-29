@@ -1,0 +1,57 @@
+.login_container{
+  background-color: lightblue;
+  width:auto;
+  height: auto;
+  margin: 2em;
+  padding: 2em;
+}
+
+#log-in{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.login_container h1{
+  padding: 0.5em;
+  text-align: center;
+}
+
+.login_form_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.login_user_name, .login_pass_user, .login_pass_remember, .login_button, .login_remember {
+  padding: 0.25em;
+}
+
+.login_button {
+  text-align: center;
+  width: 50%;
+}
+
+.login_button input{
+  width: 15em;
+}
+
+.academy-logo img{
+  height: 12em;
+  width: 17em;
+}
+
+/*Our phone 1em=16px -> 360px=22.5em*/
+@media only screen and (min-width: 361px) {
+  .academy-logo {
+    display: none;
+  }
+}
+/*Our tablet 1em=16px -> 1024px=64em*/
+@media only screen and (min-width: 1024px) {
+  .academy-logo {
+    display: initial;
+  }
+
+
+}

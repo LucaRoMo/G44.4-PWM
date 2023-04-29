@@ -23,6 +23,10 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { NoticiasPrincipalComponent } from './noticias-principal/noticias-principal.component';
 import { UserListPageComponent } from './user-list-page/user-list-page.component';
 import {UserListComponent} from "./user-list/user-list.component";
+import { LogInPageComponent } from './log-in-page/log-in-page.component';
+import { PasswordFieldComponent } from './password-field/password-field.component';
+import { CheckboxFieldComponent } from './checkbox-field/checkbox-field.component';
+import { LogInComponent } from './log-in/log-in.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +50,10 @@ import {UserListComponent} from "./user-list/user-list.component";
     NoticiasPrincipalComponent,
     UserListPageComponent,
     UserListComponent,
+    LogInPageComponent,
+    PasswordFieldComponent,
+    CheckboxFieldComponent,
+    LogInComponent,
   ],
   imports: [
     BrowserModule,
