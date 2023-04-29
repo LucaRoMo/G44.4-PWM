@@ -1,0 +1,33 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  height: 100%; /* Asegura que el contenedor tenga una altura definida */
+}
+
+.contenedor-imagen {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Asegura que el contenedor tenga una altura definida */
+  max-width: 300px;
+  max-height: 300px;
+  overflow: hidden; /* Asegura que las imágenes más grandes se ajusten correctamente */
+}
+
+#carousel-image-size {
+  width: 90%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: auto; /* Ajusta la altura de la imagen al 100% del contenedor */
+  object-fit: contain; /* Ajusta la imagen para que quepa en el contenedor sin deformarse */
+}
+
+.buttons-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+}
