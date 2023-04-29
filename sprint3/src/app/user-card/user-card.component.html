@@ -3,12 +3,19 @@
 <div class="dropdown">
   <button class="boton-dropdown" (click)="mostrarInformacion();cambiarImagen()">
     <img src="../../assets/icon.png" alt="Foto de perfil">
-    Nombre y Apellidos
+    Pepe pepe pepe
     <img [src]="imageUrl" alt="Flecha">
   </button>
   <ul *ngIf="informacion">
     <li><a href="#">Opción 1</a></li>
     <li><a href="#">Opción 2</a></li>
-    <li><a href="#">Asignaturas:</a></li>
+    <li><a href="#">
+      Asignaturas:
+      <ul class="lista-asignaturas">
+        <li>Elemento 2.1</li>
+        <li>Elemento 2.2</li>
+      </ul>
+
+    </a></li>
   </ul>
 </div>
