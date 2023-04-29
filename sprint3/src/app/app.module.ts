@@ -27,9 +27,11 @@ import { LogInPageComponent } from './log-in-page/log-in-page.component';
 import { PasswordFieldComponent } from './password-field/password-field.component';
 import { CheckboxFieldComponent } from './checkbox-field/checkbox-field.component';
 import { LogInComponent } from './log-in/log-in.component';
+import {MiAcademiaComponent} from "./pages/mi-academia/mi-academia.component";
 
 @NgModule({
   declarations: [
+    MiAcademiaComponent,
     AppComponent,
     FooterComponent,
     InformationCardComponent,
