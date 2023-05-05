@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import {HttpClient} from '@angular/common/http'
+import {HttpClient} from '@angular/common/http';
+import {HorizontalCardComponent} from '../../components/horizontal-card/horizontal-card.component';
+
 
 @Component({
   selector: 'app-mi-academia',

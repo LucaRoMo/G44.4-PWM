@@ -3,31 +3,40 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './footer/footer.component';
-import { InformationCardComponent } from './information-card/information-card.component';
-import { EmailFieldComponent } from './email-field/email-field.component';
-import { HeaderComponent } from './header/header.component';
-import { ButtonComponent } from './button/button.component';
-import { VerticalCardComponent } from './vertical-card/vertical-card.component';
-import {MessageComponent} from "./message/message.component";
-import {ChatComponent} from "./chat/chat.component";
-import { ButtonGroupComponent } from './button-group/button-group.component';
-import { ContactPageComponent } from './contact-page/contact-page.component';
-import { ContactIconTextComponent } from './contact-icon-text/contact-icon-text.component';
-import { NameFieldComponent } from './name-field/name-field.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { InformationCardComponent } from './components/information-card/information-card.component';
+import { EmailFieldComponent } from './components/email-field/email-field.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ButtonComponent } from './components/button/button.component';
+import { VerticalCardComponent } from './components/vertical-card/vertical-card.component';
+import {MessageComponent} from "./components/message/message.component";
+import {ChatComponent} from "./components/chat/chat.component";
+import { ButtonGroupComponent } from './components/button-group/button-group.component';
+import { ContactPageComponent } from './components/contact-page/contact-page.component';
+import { ContactIconTextComponent } from './components/contact-icon-text/contact-icon-text.component';
+import { NameFieldComponent } from './components/name-field/name-field.component';
 
-import { HorizontalCardComponent } from './horizontal-card/horizontal-card.component';
-import { ChatPageComponent } from './chat-page/chat-page.component';
-import { UserCardComponent } from './user-card/user-card.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { NoticiasPrincipalComponent } from './noticias-principal/noticias-principal.component';
-import { UserListPageComponent } from './user-list-page/user-list-page.component';
-import {UserListComponent} from "./user-list/user-list.component";
-import { LogInPageComponent } from './log-in-page/log-in-page.component';
-import { PasswordFieldComponent } from './password-field/password-field.component';
-import { CheckboxFieldComponent } from './checkbox-field/checkbox-field.component';
-import { LogInComponent } from './log-in/log-in.component';
+import { HorizontalCardComponent } from './components/horizontal-card/horizontal-card.component';
+import { ChatPageComponent } from './components/chat-page/chat-page.component';
+import { UserCardComponent } from './components/user-card/user-card.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { NoticiasPrincipalComponent } from './components/noticias-principal/noticias-principal.component';
+import { UserListPageComponent } from './components/user-list-page/user-list-page.component';
+import {UserListComponent} from "./components/user-list/user-list.component";
+import { LogInPageComponent } from './components/log-in-page/log-in-page.component';
+import { PasswordFieldComponent } from './components/password-field/password-field.component';
+import { CheckboxFieldComponent } from './components/checkbox-field/checkbox-field.component';
+import { LogInComponent } from './components/log-in/log-in.component';
 import { MiAcademiaComponent} from "./pages/mi-academia/mi-academia.component";
+import { InformationPageComponent} from "./components/information-page/information-page.component";
+import {ImageCarouselComponent} from "./components/image-carousel/image-carousel.component";
+
+
+import { initializeApp,provideFirebaseApp } from "@angular/fire/app";
+import {getAuth, provideAuth} from "@angular/fire/auth";
+import {getFirestore, provideFirestore} from "@angular/fire/firestore";
+import {environment} from "./services/environments/environment";
+
 
 @NgModule({
   declarations: [
@@ -55,10 +64,17 @@ import { MiAcademiaComponent} from "./pages/mi-academia/mi-academia.component";
     PasswordFieldComponent,
     CheckboxFieldComponent,
     LogInComponent,
+    InformationPageComponent,
+    MiAcademiaComponent,
+    ImageCarouselComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore())
   ],
   providers: [],
   bootstrap: [AppComponent]
