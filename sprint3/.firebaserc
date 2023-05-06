@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "g44-4-academia-pwm"
+  },
+  "targets": {
+    "g44-4-academia-pwm": {
+      "hosting": {
+        "sprint3": [
+          "g44-4-academia-pwm"
+        ]
+      }
+    }
+  }
+}

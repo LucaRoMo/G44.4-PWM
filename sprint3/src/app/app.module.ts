@@ -36,7 +36,7 @@ import { AaaaaaaaaComponent } from './components/aaaaaaaaa/aaaaaaaaa.component';
 import { initializeApp,provideFirebaseApp } from "@angular/fire/app";
 import { getAuth, provideAuth } from "@angular/fire/auth";
 import { getFirestore, provideFirestore } from "@angular/fire/firestore";
-import { environment } from "./services/environments/environment";
+import { environment } from "src/environments/environment";
 import { AngularFireModule } from "@angular/fire/compat";
 import { PhoneHeaderComponent } from './components/phone/phone-header/phone-header.component';
 
@@ -76,10 +76,10 @@ import { PhoneHeaderComponent } from './components/phone/phone-header/phone-head
   imports: [
     BrowserModule,
     AppRoutingModule,
-    provideFirebaseApp(() => initializeApp(environment)),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
-    AngularFireModule.initializeApp(environment)
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]
