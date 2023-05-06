@@ -1,64 +1,28 @@
-.contact_page_group_of_icon_text{
-  width: 80%;
-  height: 80%;
+.icon_text_container_contact{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  border: 1px red solid;
+}
+.contact_page_group_of_icon_text{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2em;
-}
-.contact_page_group_of_name_field{
-  display: grid;
   justify-content: center;
-  grid-template-columns: 20em 1fr;
-  grid-gap: 1em;
-  grid-template-rows: repeat(4,1fr) 20em ;
-  padding-right: 2em;
-  grid-template-areas:
-    "name1 ."
-    "name2 ."
-    "name3 ."
-    "name4 ."
-    "text-area text-area";
+  flex-wrap: wrap;
+  border: 1px red solid;
 }
 
-.contact_page_info_text{
-  margin-left: 10em;
-  margin-right: 10em;
-}
-
-#contact_page_text_area{
-  grid-area: text-area;
-  height: 70%;
-  width: 100%;
-}
-
-#contact_page_icon_text_1{
-  grid-area: icon1;
-}
-#contact_page_icon_text_2{
-  grid-area: icon2;
-}
-#contact_page_icon_text_3{
-  grid-area: icon3;
-}
-
-#contact_page_name_field_1{
-  grid-area: name1;
-}
-#contact_page_name_field_2{
-  grid-area: name2;
-}
-#contact_page_name_field_3{
-  grid-area: name3;
-}
-#contact_page_name_field_4{
-  grid-area: name4;
+.contact_page_group_of_name_field{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em;
 }
 
 .text_area_div{
-  grid-area: text-area;
-}
-*{
-//font-family: Serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-page.component.css']
 })
 export class ContactPageComponent {
-
+  names=['Nombre', 'Apellidos', 'Correo Electronico', ''];
 }

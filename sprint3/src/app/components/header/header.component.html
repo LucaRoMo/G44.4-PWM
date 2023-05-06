@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/../src/app/components/header/header.component.css">
+<link rel="stylesheet" type="text/html" href="/../src/app/components/header/header.component.css">
 <header class="website_header">
   <div class="header_academy_logo">
     <a href="#">
@@ -10,10 +10,13 @@
   </div>
   <div class="header_navbar">
     <ul>
-      <li><a routerLink="/información">Información</a></li>
-      <li><a href="../contact-page/contact-page.component.html">Contacto</a></li>
+      <li><a routerLink="informacion" routerLinkActive="active">Información</a></li>
+      <li><a routerLink="contacto" routerLinkActive="active">Contacto</a></li>
+      <li><a routerLink="horario" routerLinkActive="active">Horario</a></li>
+      <li><a routerLink="miAcademia" routerLinkActive="active">Mi Academia</a></li>
+      <!--li><a href="../contact-page/contact-page.component.html">Contacto</a></li>
       <li><a href="#">Schedule</a></li>
-      <li><a href="../../pages/mi-academia/mi-academia.component.html">Miacademia</a></li>
+      <li><a href="../../pages/mi-academia/mi-academia.component.html">Miacademia</a></li-->
     </ul>
   </div>
   <div class="menu-burger" (click)="ChangeBurger()">
@@ -25,9 +28,13 @@
     <div class ="menu-burger-closed" *ngIf="!burgerClosed">
       <img src="../../../assets/closed_icon.png" alt="menu-opened">
       <ul>
-        <li><a href="../information-page/information-page.component.html">Información</a></li>
+        <li><a routerLink="informacion" routerLinkActive="active">Información</a></li>
+        <li><a routerLink="contacto" routerLinkActive="active">Contacto</a></li>
+        <li><a routerLink="horario" routerLinkActive="active">Schedule</a></li>
+
+        <!--li><a href="../information-page/information-page.component.html">Información</a></li>
         <li><a href="../contact-page/contact-page.component.html">Contacto</a></li>
-        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Schedule</a></li-->
       </ul>
     </div>
 

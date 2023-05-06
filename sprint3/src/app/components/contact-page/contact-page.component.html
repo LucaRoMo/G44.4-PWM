@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Contacto</title>
-  <link rel="stylesheet" type="text/css" href="/../src/app/components/contact-page/contact-page.component.css">
+  <link rel="stylesheet" type="text/html" href="/../src/app/components/contact-page/contact-page.component.css">
   <script src="contact-page.component.ts"></script>
 </head>
 <body>
@@ -21,14 +21,18 @@
     ¡No dudes en contactar con nosotros!
   </p>
   <div class="contact_page_group_of_name_field">
+
     <div id="contact_page_name_field_1"><app-name-field></app-name-field></div>
     <div id="contact_page_name_field_2"><app-name-field></app-name-field></div>
     <div id="contact_page_name_field_3"><app-name-field></app-name-field></div>
     <div id="contact_page_name_field_4"><app-name-field></app-name-field></div>
+    </div>
+  <div>
     <div class="text_area_div">
       <label for="contact_page_text_area">Pon tu comentario aquí</label>
       <textarea id="contact_page_text_area" rows="6" cols="30" required placeholder="Pon tu comentario aquí..."></textarea>
-      <input id="contact-btn" type="submit" value="Enviar">
+      <button type="button" class="btn btn-primary">Enviar</button>
+
     </div>
   </div>
 </div>
