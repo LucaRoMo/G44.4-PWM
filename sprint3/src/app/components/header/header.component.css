@@ -7,29 +7,18 @@ body {
 @media only screen and (min-width: 801px) {
 
   .website_header {
-    display: grid;
+    /*display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr 2fr 1fr 1fr;
     grid-template-rows: auto;
     background-color: skyblue;
     grid-template-areas: "logo name navbar icon";
-  }
-
-
-  .header_academy_logo {
-    grid-area: logo;
-  }
-
-  .header_academy_name {
-    grid-area: name;
-  }
-
-  .header_navbar {
-    grid-area: navbar;
-  }
-
-  .header_academy_user {
-    grid-area: icon;
+     */
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-evenly;
+    background-color: skyblue;
   }
 
   .header_academy_logo, .header_academy_name, .header_navbar, .header_academy_user {
@@ -39,20 +28,19 @@ body {
   }
 
   #logoIconHeader, #iconHeader {
-    height: 50px;
-    width: 50px;
+    height: 3em;
+    width: 3em;
   }
 
   .header_navbar ul, .header_navbar li {
     list-style: none;
     display: flex;
-    padding: 1em;
-    margin: 0;
+    color: black;
   }
 
   .header_navbar li {
     margin: 0.5em;
-    padding: 10px 15px;
+    padding: 2em 4em;
     color: white;
     border-radius: 20px;
   }

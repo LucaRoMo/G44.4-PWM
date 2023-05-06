@@ -36,6 +36,7 @@ import { initializeApp,provideFirebaseApp } from "@angular/fire/app";
 import {getAuth, provideAuth} from "@angular/fire/auth";
 import {getFirestore, provideFirestore} from "@angular/fire/firestore";
 import {environment} from "./services/environments/environment";
+import { AaaaaaaaaComponent } from './components/aaaaaaaaa/aaaaaaaaa.component';
 
 
 @NgModule({
@@ -67,6 +68,7 @@ import {environment} from "./services/environments/environment";
     InformationPageComponent,
     MiAcademiaComponent,
     ImageCarouselComponent,
+    AaaaaaaaaComponent,
 
   ],
   imports: [
