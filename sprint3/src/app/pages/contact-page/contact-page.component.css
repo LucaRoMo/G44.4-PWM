@@ -1,0 +1,27 @@
+.icon_text_container_contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px red solid;
+}
+.contact_page_group_of_icon_text{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact_page_group_of_name_field{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em;
+}
+
+.text_area_div{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}

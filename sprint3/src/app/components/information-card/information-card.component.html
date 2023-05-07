@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/../src/app/components/information-card/information-card.component.css">
+<div class="container-information-card">
+
+  <div class="txt-information-card">
+    <div class="tittle-and-image">
+
+      <div class="image-information-card">
+        <img src="../../../assets/libros_apilados.jpg" alt="imagen de información">
+      </div>
+      <button class="tittle" (click)=abrirInformationCard()>
+        Noticia
+        <img src="../../../assets/down-arrow.png" alt="arrow">
+      </button>
+    </div>
+    <p class="visible-txt-information-card" *ngIf="abierto">
+      Se están implementando políticas para mejorar la
+      calidad de la educación y promover la formación continua
+      de los docentes, lo que podría beneficiar a tu academia al
+      aumentar la demanda de cursos y programas de capacitación.
+      ¡Aprovecha esta oportunidad para seguir creciendo y mejorando
+      tu oferta educativa!
+    </p>
+  </div>
+
+</div>

@@ -1,0 +1,17 @@
+#website-footer{
+  display: flex;
+  flex: border-box;
+  flex-direction: column;
+  background-color: skyblue;
+  padding: 1em;
+}
+.footer_social_media{
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+
+}
+.footer_social_media img{
+  height: 1em;
+  width: 1em;
+}

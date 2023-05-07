@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Chat</title>
+  <link rel="stylesheet" type="text/css" href="/sprint3/src/app/pages/chat-page/chat-page.component.css">
+  <script src="chat-page.component.ts"></script>
+</head>
+<body id="chat_page_body">
+<div class="chat_page_center">
+  <div id="chat_page_other_user_zone">
+    <div id="other_user">
+      <app-vertical-card></app-vertical-card>
+    </div>
+    <div id="other_user_card">
+      <app-horizontal-card></app-horizontal-card>
+    </div>
+  </div>
+  <nav id="chat_page_chat">
+    <app-chat></app-chat>
+  </nav>
+  <div id="chat_page_this_user_zone">
+    <div id="this_user">
+      <app-vertical-card></app-vertical-card>
+    </div>
+  </div>
+</div>
+<!--<script>
+  function init() {
+    module_loader("../HTML_Modules/header.html", "chat_page_header");
+    module_loader("../HTML_Modules/footer.html", "chat_page_footer");
+    module_loader("../HTML_Modules/chat.html", "chat_page_chat");
+
+
+    //Card de tamaño móvil
+    fetch("../HTML_Modules/elongated_card.html")
+      .then((file) => {
+        return file.text()
+      })
+      .then((text) => {
+        document.getElementById('other_user_card').innerHTML = text;
+
+        fetch("../JSON_Files/users.json").then((file) => file.json())
+          .then((users) => {
+            const user = users.find(u => u.id === 2);
+            document.querySelector('.elongated_card_text').textContent = user.nombre+ " " + user.apellidos;
+            document.querySelector(".elongated_card_image").src = user.foto;
+            document.querySelector(".elongated_card_image").alt = user.nombre;
+          })
+      })
+
+    //this user
+    fetch("../HTML_Modules/chat_user.html").then((file) => {
+      return file.text()
+    }).then((text) => {
+      document.getElementById('this_user').innerHTML = text;
+
+      const container = document.querySelector('#this_user');
+      const template = document.querySelector('.template_chat_user_card');
+
+      fetch("../JSON_Files/users.json").then((file) => file.json())
+        .then((users) => {
+          const user = users.find(u => u.id === 1);
+          const card = template.content.cloneNode(true);
+          card.querySelector('.chat_user_name').textContent = user.nombre + " " + user.apellidos;
+          card.querySelector(".chat_user_image").src = user.foto;
+          card.querySelector(".chat_user_image").alt = user.nombre;
+          container.appendChild(card);
+        })
+    })
+
+    //other user
+    fetch("../HTML_Modules/chat_user.html").then((file) => {
+      return file.text()
+    }).then((text) => {
+      document.getElementById('other_user').innerHTML = text;
+
+      const container = document.querySelector('#other_user');
+      const template = document.querySelector('.template_chat_user_card');
+
+      fetch("../JSON_Files/users.json").then((file) => file.json())
+        .then((users) => {
+          const user = users.find(u => u.id === 2);
+          const card = template.content.cloneNode(true);
+          card.querySelector('.chat_user_name').textContent = user.nombre + " " + user.apellidos;
+          card.querySelector(".chat_user_image").src = user.foto;
+          card.querySelector(".chat_user_image").alt = user.nombre;
+          container.appendChild(card);
+        })
+    })
+
+    //messages chat
+    fetch("../HTML_Modules/chat.html").then((file) => {
+      return file.text()
+    }).then((text) => {
+      document.getElementById('chat_page_chat').innerHTML = text;
+
+      const containerThis1 = document.querySelector('.chat_thisuser_message1');
+      const containerThis2 = document.querySelector('.chat_thisuser_message2');
+      const containerOther1 = document.querySelector('.chat_otheruser_message1');
+      const containerOther2 = document.querySelector('.chat_otheruser_message2');
+
+      const template = document.querySelector('.template_message');
+
+      fetch("../JSON_Files/mensajes.json").then((file) => file.json())
+        .then((messages) => {
+
+          const message1 = template.content.cloneNode(true);
+          const message2 = template.content.cloneNode(true);
+          const message3 = template.content.cloneNode(true);
+          const message4 = template.content.cloneNode(true);
+
+          message1.querySelector('.message-text').textContent = messages[0].contenido;
+          message2.querySelector('.message-text').textContent = messages[1].contenido;
+          message3.querySelector('.message-text').textContent = messages[2].contenido;
+          message4.querySelector('.message-text').textContent = messages[3].contenido;
+
+          containerThis1.appendChild(message1);
+          containerOther1.appendChild(message2);
+          containerThis2.appendChild(message3);
+          containerOther2.appendChild(message4);
+
+        })
+    })
+
+  }
+  document.addEventListener('DOMContentLoaded', init);
+</script>-->
+</body>
+
+</html>

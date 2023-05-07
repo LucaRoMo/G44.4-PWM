@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrousel</title>
+  <link rel="stylesheet" href="/../src/app/components/image-carousel/image-carousel.component.css">
+</head>
+<body>
+<div class="contenedor">
+  <div class="contenedor-imagen">
+    <img id="carousel-image-size" [src]="images[currentIndex]" alt="Imagen de marcador de posición">
+
+  </div>
+  <!--div *ngFor="let image of images">
+    <img id="carousel-image-size2" src="{{ image }}" alt="Imagen de marcador de posición">
+
+  </div-->
+
+  <div class="buttons-container">
+    <button (click)="prevImage()">Atrás</button>
+    <button (click)="nextImage()">Adelante</button>
+  </div>
+
+
+</div>
+</body>
+</html>
