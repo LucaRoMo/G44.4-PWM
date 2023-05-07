@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Service} from "../../shared/services/service";
 
 @Component({
   selector: 'app-user-list',
@@ -6,6 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent {
+
+  constructor(private service: Service) {}
+  async getUsers(){
+    let allUsers = await this.service.getAllUsers();
+    console.log(allUsers);
+  }
+  /*
+  createUser(fName:string, lName:string) {
+    let newId = this.service.generateNewId();
+    let newUser = { newId, fName, lName};
+    this.service.addNewUser(newUser);
+  }*/
+
   users: any[]=[
     {
       id: 1,

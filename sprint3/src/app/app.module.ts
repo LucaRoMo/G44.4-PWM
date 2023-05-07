@@ -12,29 +12,29 @@ import { VerticalCardComponent } from './components/vertical-card/vertical-card.
 import {MessageComponent} from "./components/message/message.component";
 import {ChatComponent} from "./components/chat/chat.component";
 import { ButtonGroupComponent } from './components/button-group/button-group.component';
-import { ContactPageComponent } from './components/contact-page/contact-page.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { ContactIconTextComponent } from './components/contact-icon-text/contact-icon-text.component';
 import { NameFieldComponent } from './components/name-field/name-field.component';
 
 import { HorizontalCardComponent } from './components/horizontal-card/horizontal-card.component';
-import { ChatPageComponent } from './components/chat-page/chat-page.component';
+import { ChatPageComponent } from './pages/chat-page/chat-page.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
-import { HomePageComponent } from './components/home-page/home-page.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NoticiasPrincipalComponent } from './components/noticias-principal/noticias-principal.component';
-import { UserListPageComponent } from './components/user-list-page/user-list-page.component';
+import { UserListPageComponent } from './pages/user-list-page/user-list-page.component';
 import {UserListComponent} from "./components/user-list/user-list.component";
-import { LogInPageComponent } from './components/log-in-page/log-in-page.component';
+import { LogInPageComponent } from './pages/log-in-page/log-in-page.component';
 import { PasswordFieldComponent } from './components/password-field/password-field.component';
 import { CheckboxFieldComponent } from './components/checkbox-field/checkbox-field.component';
 import { LogInComponent } from './components/log-in/log-in.component';
 import { MiAcademiaComponent } from "./pages/mi-academia/mi-academia.component";
-import { InformationPageComponent } from "./components/information-page/information-page.component";
+import { InformationPageComponent } from "./pages/information-page/information-page.component";
 import { ImageCarouselComponent } from "./components/image-carousel/image-carousel.component";
 
 import { initializeApp,provideFirebaseApp } from "@angular/fire/app";
 import { getAuth, provideAuth } from "@angular/fire/auth";
 import { getFirestore, provideFirestore } from "@angular/fire/firestore";
-import { environment } from "src/environments/environment";
+import { environment } from "../environments/environment";
 import { AngularFireModule } from "@angular/fire/compat";
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
@@ -94,7 +94,7 @@ import { SchedulePageComponent } from './pages/schedule-page/schedule-page.compo
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

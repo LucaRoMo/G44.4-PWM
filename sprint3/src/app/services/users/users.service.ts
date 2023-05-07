@@ -8,7 +8,7 @@ import { Auth} from "@angular/fire/auth";
 })
 export class UsersService {
 
-  constructor(protected http: HttpClient, private serv: FirestoreService) {  }
+  constructor(protected http: HttpClient, private serv: FirestoreService, private auth: Auth) {}
 
   /*getUsers(): Observable<Users[]>{
     return this.serv.getAllDocs(this.collection);:
