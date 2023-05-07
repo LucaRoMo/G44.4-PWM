@@ -19,4 +19,6 @@ export class MiAcademiaComponent {
       console.log(this.asignaturas)
     });
   }
+
+
 }

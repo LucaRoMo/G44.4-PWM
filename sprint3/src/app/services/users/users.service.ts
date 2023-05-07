@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import {FirestoreService} from "../firestore/firestore.service";
 import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
+import { Auth} from "@angular/fire/auth";
+
 @Injectable({
   providedIn: 'root'
 })
@@ -11,7 +12,16 @@ export class UsersService {
 
   /*getUsers(): Observable<Users[]>{
     return this.serv.getAllDocs(this.collection);:
+  }
+
+  register( email:string, password:string){
+    return createUserWithEmailAndPassword(this.auth, email, password)
   }*/
 
-
+  /*login( email:string, password:string){
+    console.log("El email:",email)
+    console.log("la contraseña: ",password)
+    //return this.authService.login();
+    return signInWithEmailAndPassword(this.auth, email, password)
+  }*/
 }

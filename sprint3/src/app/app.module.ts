@@ -36,6 +36,16 @@ import { getAuth, provideAuth } from "@angular/fire/auth";
 import { getFirestore, provideFirestore } from "@angular/fire/firestore";
 import { environment } from "src/environments/environment";
 import { AngularFireModule } from "@angular/fire/compat";
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import {AuthService} from "./shared/services/auth.service";
+import { FilterComponent } from './components/filter/filter.component';
+import { ScheduleComponent } from './components/schedule/schedule.component';
+import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+import { SchedulePageComponent } from './pages/schedule-page/schedule-page.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +76,9 @@ import { AngularFireModule } from "@angular/fire/compat";
     InformationPageComponent,
     MiAcademiaComponent,
     ImageCarouselComponent,
+    FilterComponent,
+    ScheduleComponent,
+    SchedulePageComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,7 +86,13 @@ import { AngularFireModule } from "@angular/fire/compat";
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    AngularFireDatabaseModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

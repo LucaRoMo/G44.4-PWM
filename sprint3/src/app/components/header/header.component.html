@@ -15,6 +15,7 @@
       <li><a routerLink="horario" routerLinkActive="active">Horario</a></li>
       <li><a routerLink="miAcademia" routerLinkActive="active">Mi Academia</a></li>
       <!--li><a href="../contact-page/contact-page.component.html">Contacto</a></li>
+      <button *ngIf="sesionActiva()" (click)="logout()"></button>
       <li><a href="#">Schedule</a></li>
       <li><a href="../../pages/mi-academia/mi-academia.component.html">Miacademia</a></li-->
     </ul>
